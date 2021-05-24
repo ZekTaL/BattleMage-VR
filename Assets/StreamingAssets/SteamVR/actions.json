@@ -1,7 +1,7 @@
 {
   "actions": [
     {
-      "name": "/actions/default/in/InteractUI",
+      "name": "/actions/default/in/interact_ui",
       "type": "boolean"
     },
     {
@@ -159,7 +159,6 @@
     {
       "language_tag": "en_US",
       "/actions/default/in/HeadsetOnHead": "Headset on head (proximity sensor)",
-      "/actions/default/in/InteractUI": "Interact With UI",
       "/actions/default/in/Pose": "Pose",
       "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
       "/actions/default/in/SkeletonRightHand": "Skeleton (Right)",

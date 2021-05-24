@@ -17,7 +17,7 @@ namespace Valve.VR
     public partial class SteamVR_Actions
     {
         
-        private static SteamVR_Action_Boolean p_default_InteractUI;
+        private static SteamVR_Action_Boolean p_default_interact_ui;
         
         private static SteamVR_Action_Boolean p_default_Teleport;
         
@@ -55,11 +55,11 @@ namespace Valve.VR
         
         private static SteamVR_Action_Pose p_mixedreality_ExternalCamera;
         
-        public static SteamVR_Action_Boolean default_InteractUI
+        public static SteamVR_Action_Boolean default_interact_ui
         {
             get
             {
-                return SteamVR_Actions.p_default_InteractUI.GetCopy<SteamVR_Action_Boolean>();
+                return SteamVR_Actions.p_default_interact_ui.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
@@ -210,7 +210,7 @@ namespace Valve.VR
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
-                    SteamVR_Actions.default_InteractUI,
+                    SteamVR_Actions.default_interact_ui,
                     SteamVR_Actions.default_Teleport,
                     SteamVR_Actions.default_Grab,
                     SteamVR_Actions.default_Interact,
@@ -230,7 +230,7 @@ namespace Valve.VR
                     SteamVR_Actions.buggy_Reset,
                     SteamVR_Actions.mixedreality_ExternalCamera};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
-                    SteamVR_Actions.default_InteractUI,
+                    SteamVR_Actions.default_interact_ui,
                     SteamVR_Actions.default_Teleport,
                     SteamVR_Actions.default_Grab,
                     SteamVR_Actions.default_Interact,
@@ -256,7 +256,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_Pose,
                     SteamVR_Actions.mixedreality_ExternalCamera};
             Valve.VR.SteamVR_Input.actionsBoolean = new Valve.VR.SteamVR_Action_Boolean[] {
-                    SteamVR_Actions.default_InteractUI,
+                    SteamVR_Actions.default_interact_ui,
                     SteamVR_Actions.default_Teleport,
                     SteamVR_Actions.default_Grab,
                     SteamVR_Actions.default_Interact,
@@ -277,7 +277,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_SkeletonLeftHand,
                     SteamVR_Actions.default_SkeletonRightHand};
             Valve.VR.SteamVR_Input.actionsNonPoseNonSkeletonIn = new Valve.VR.ISteamVR_Action_In[] {
-                    SteamVR_Actions.default_InteractUI,
+                    SteamVR_Actions.default_interact_ui,
                     SteamVR_Actions.default_Teleport,
                     SteamVR_Actions.default_Grab,
                     SteamVR_Actions.default_Interact,
@@ -295,7 +295,7 @@ namespace Valve.VR
         
         private static void PreInitActions()
         {
-            SteamVR_Actions.p_default_InteractUI = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/InteractUI")));
+            SteamVR_Actions.p_default_interact_ui = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/interact_ui")));
             SteamVR_Actions.p_default_Teleport = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/Teleport")));
             SteamVR_Actions.p_default_Grab = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/Grab")));
             SteamVR_Actions.p_default_Interact = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/Interact")));

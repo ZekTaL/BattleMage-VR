@@ -98,26 +98,6 @@
       ],
       "sources": [
         {
-          "path": "/user/hand/left/input/primary",
-          "mode": "button",
-          "parameters": {},
-          "inputs": {
-            "click": {
-              "output": "/actions/default/in/interactui"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/right/input/primary",
-          "mode": "button",
-          "parameters": {},
-          "inputs": {
-            "click": {
-              "output": "/actions/default/in/interactui"
-            }
-          }
-        },
-        {
           "path": "/user/hand/left/input/touchstrip",
           "mode": "dpad",
           "parameters": {
