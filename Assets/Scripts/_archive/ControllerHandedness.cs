@@ -1,4 +1,4 @@
-﻿namespace BreadAndButter.VR
+﻿namespace BattleMage.VR
 {
     public enum ControllerHandedness
     {

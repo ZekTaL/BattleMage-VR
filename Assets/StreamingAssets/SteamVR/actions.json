@@ -1,7 +1,7 @@
 {
   "actions": [
     {
-      "name": "/actions/default/in/interact_ui",
+      "name": "/actions/default/in/InteractUI",
       "type": "boolean"
     },
     {
@@ -36,7 +36,7 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/HeadsetOnHead",
+      "name": "/actions/default/in/Pointer",
       "type": "boolean",
       "requirement": "optional"
     },
@@ -48,6 +48,10 @@
     {
       "name": "/actions/default/in/SnapTurnRight",
       "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/TouchpadAxis",
+      "type": "vector2"
     },
     {
       "name": "/actions/default/out/Haptic",
@@ -158,7 +162,6 @@
   "localization": [
     {
       "language_tag": "en_US",
-      "/actions/default/in/HeadsetOnHead": "Headset on head (proximity sensor)",
       "/actions/default/in/Pose": "Pose",
       "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
       "/actions/default/in/SkeletonRightHand": "Skeleton (Right)",
@@ -168,7 +171,10 @@
       "/actions/default/in/SnapTurnLeft": "Snap Turn (Left)",
       "/actions/default/in/SnapTurnRight": "Snap Turn (Right)",
       "/actions/default/in/Grab": "Grab",
-      "/actions/default/in/Interact": "Interact"
+      "/actions/default/in/Interact": "Interact",
+      "/actions/default/in/Pointer": "Laser Pointer",
+      "/actions/default/in/TouchpadAxis": "Touchpad Position",
+      "/actions/default/in/InteractUI": "Interact With UI"
     }
   ]
 }
