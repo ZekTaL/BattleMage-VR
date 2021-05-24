@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using BattleMage.VR;
+using BattleMage.PC;
 
 namespace BattleMage.Managers
 {
@@ -23,8 +24,8 @@ namespace BattleMage.Managers
 
         bool inVR;
 
-        public Transform shootPointLeft { get; private set; }
-        public Transform shootPointRight { get; private set; }
+        public Transform ShootPointLeft => inVR ? vr_ShootPoint_Left : pc_ShootPoint_Left;
+        public Transform ShootPointRight => inVR? vr_ShootPoint_Right : pc_ShootPoint_Right;
 
         void Awake()
         {
@@ -37,24 +38,31 @@ namespace BattleMage.Managers
                 vrRig.gameObject.SetActive(true);
                 pcRig.gameObject.SetActive(false);
             }
-            else
+            else //In PC rig
             {
+                PCCursorManager.HideCursor();
                 vrRig.gameObject.SetActive(false);
                 pcRig.gameObject.SetActive(true);
             }
 
-            shootPointLeft = inVR ? vr_ShootPoint_Left : pc_ShootPoint_Left;
-            shootPointRight = inVR ? vr_ShootPoint_Right : pc_ShootPoint_Right;
-            Debug.Log("=== Is in VR? " + inVR + " === shootPointLeft; " + shootPointLeft);
-            Debug.Log("vr_ShootPoint_Left " + vr_ShootPoint_Left + " vr_ShootPoint_Right " + vr_ShootPoint_Right);
         }
 
-        void Start ()
+        bool paused;
+       void Update ()
         {
-            shootPointLeft = inVR ? vr_ShootPoint_Left : pc_ShootPoint_Left;
-            shootPointRight = inVR ? vr_ShootPoint_Right : pc_ShootPoint_Right;
-            Debug.Log("=== Is in VR? " + inVR + " === shootPointLeft; " + shootPointLeft);
-            Debug.Log("vr_ShootPoint_Left " + vr_ShootPoint_Left + " vr_ShootPoint_Right " + vr_ShootPoint_Right);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("pc_ShootPoint_Left " + pc_ShootPoint_Left);
+            }
+
+            //Pause
+            if (!inVR && Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (paused = !paused)
+                    PCCursorManager.RevealCursor();
+                else
+                    PCCursorManager.HideCursor();
+            }
         }
     }
 }

@@ -96,8 +96,8 @@ namespace BattleMage.SpellSystem
             };
         }
 
-        Transform GetLeftShootPoint() => rigM.shootPointLeft;
-        Transform GetRightShootPoint() => rigM.shootPointRight;
+        Transform GetLeftShootPoint() => rigM.ShootPointLeft;
+        Transform GetRightShootPoint() => rigM.ShootPointRight;
         #endregion
     }
 }

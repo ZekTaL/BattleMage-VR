@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace BattleMage.PC
 {
-    public class PCCursorManager : MonoBehaviour
+    public static class PCCursorManager
     {
         public static void TogglePCCursor(bool isActive)
         {
