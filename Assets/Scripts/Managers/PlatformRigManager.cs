@@ -11,20 +11,20 @@ namespace BattleMage.Managers
 {
     public class PlatformRigManager : MonoBehaviour
     {
-        public GameObject vrControl;
-        public GameObject desktopControl;
+        public GameObject vrRig;
+        public GameObject pcRig;
 
-        void Start()
+        void Awake()
         {
             if (VRUtil.IsVREnabled())
             {
-                vrControl.gameObject.SetActive(true);
-                desktopControl.gameObject.SetActive(false);
+                vrRig.gameObject.SetActive(true);
+                pcRig.gameObject.SetActive(false);
             }
             else
             {
-                vrControl.gameObject.SetActive(false);
-                desktopControl.gameObject.SetActive(true);
+                vrRig.gameObject.SetActive(false);
+                pcRig.gameObject.SetActive(true);
             }
         }
     }
