@@ -15,7 +15,7 @@ D:/CORE/TAFE Diploma/1_PlatformDev/As3_VR/BattleMage-VR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50462
+50510
 Successfully changed project path to: D:/CORE/TAFE Diploma/1_PlatformDev/As3_VR/BattleMage-VR
 D:/CORE/TAFE Diploma/1_PlatformDev/As3_VR/BattleMage-VR
 Using Asset Import Pipeline V2.
@@ -23,8 +23,8 @@ Unable to join player connection multicast group.
 
 Unable to join player connection alternative multicast group.
 
-Refreshing native plugins compatible for Editor in 30.98 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 34.54 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.91 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/CORE/TAFE Diploma/1_PlatformDev/As3_VR/BattleMage-VR/Assets
@@ -39,52 +39,206 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001954 seconds.
+Registered in 0.002034 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 30.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 31.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.982 seconds
+- Completed reload, in  2.039 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001620 seconds.
+Registered in 0.001630 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in D:\CORE\TAFE Diploma\1_PlatformDev\As3_VR\BattleMage-VR\Library\PackageCache\com.unity.xr.oculus@1.6.1\Runtime\OculusLoader.cs:242 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in D:\CORE\TAFE Diploma\1_PlatformDev\As3_VR\BattleMage-VR\Library\PackageCache\com.unity.xr.oculus@1.6.1\Runtime\OculusLoader.cs:227 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.6.1/Runtime/OculusLoader.cs Line: 242)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  0.741 seconds
+- Completed reload, in  0.865 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1085 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 55.0 MB.
-System memory in use after: 55.1 MB.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1526.
-Total: 1.759400 ms (FindLiveObjects: 0.250000 ms CreateObjectMapping: 0.058400 ms MarkObjects: 1.349600 ms  DeleteObjects: 0.100300 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1877.
+Total: 2.177800 ms (FindLiveObjects: 0.264700 ms CreateObjectMapping: 0.109500 ms MarkObjects: 1.720000 ms  DeleteObjects: 0.082000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Art
-  artifactKey: Guid(655ebac45555f2340814684579f29d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art using Guid(655ebac45555f2340814684579f29d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff28e331e6804a61a3d2fd2571a32c6a') in 0.007237 seconds
-  Import took 0.009126 seconds .
+  path: Assets/VRTestScene.unity
+  artifactKey: Guid(8ffe83f1502f77c479e8d8b5636cb757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTestScene.unity using Guid(8ffe83f1502f77c479e8d8b5636cb757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23793c35777c966e896d1e494931eb44') in 0.015614 seconds
+  Import took 0.018806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008387 seconds.
+  path: Assets/VRTestScene.unity
+  artifactKey: Guid(8ffe83f1502f77c479e8d8b5636cb757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRTestScene.unity using Guid(8ffe83f1502f77c479e8d8b5636cb757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23793c35777c966e896d1e494931eb44') in 0.002308 seconds
+  Import took 0.005020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 125.373515 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(f7a134057aa470f4ca6a507a713f0423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(f7a134057aa470f4ca6a507a713f0423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8ec8bf0359f48075a021ceab6decc0') in 0.005622 seconds
+  Import took 0.008384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.011934 seconds.
+  path: Assets/Scripts/VR
+  artifactKey: Guid(de39bef3bad1e1645a274e58cfdc438d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/VR using Guid(de39bef3bad1e1645a274e58cfdc438d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a8ff3249bd547bb739d037d3fc0af54') in 0.006653 seconds
+  Import took 0.009454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.320229 seconds.
+  path: Assets/Scripts/Rigs
+  artifactKey: Guid(fcd8809f293d93c42a9a571a0c98b6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs using Guid(fcd8809f293d93c42a9a571a0c98b6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91dc5af9bfc0aec323e7b8d148780788') in 0.006719 seconds
+  Import took 0.009101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.669382 seconds.
+  path: Assets/Scripts/Rigs/VR
+  artifactKey: Guid(ed0da407b89fe2146871e0f4a020a024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs/VR using Guid(ed0da407b89fe2146871e0f4a020a024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a62b49ac4b4bb28c0eee199ab26842') in 0.001743 seconds
+  Import took 0.004775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.675675 seconds.
+  path: Assets/Scripts/Rigs/VR/VRControllerInput.cs
+  artifactKey: Guid(feb6ffe944e52a444934108512411167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs/VR/VRControllerInput.cs using Guid(feb6ffe944e52a444934108512411167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa8cdec9f7b16ddf04512396e7dae27') in 0.030377 seconds
+  Import took 0.032824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008880 seconds.
+  path: Assets/Scripts/Rigs/VR/VRControllerInput.cs
+  artifactKey: Guid(feb6ffe944e52a444934108512411167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs/VR/VRControllerInput.cs using Guid(feb6ffe944e52a444934108512411167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa8cdec9f7b16ddf04512396e7dae27') in 0.001731 seconds
+  Import took 0.004016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.132412 seconds.
+  path: Assets/Scripts/Rigs/VR/InputEventArgs.cs
+  artifactKey: Guid(273e7c24397dc3f4db245b443132fb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs/VR/InputEventArgs.cs using Guid(273e7c24397dc3f4db245b443132fb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06309f346e72d2a3243a7b01bdc90389') in 0.012122 seconds
+  Import took 0.016791 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001601 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in D:\CORE\TAFE Diploma\1_PlatformDev\As3_VR\BattleMage-VR\Library\PackageCache\com.unity.xr.oculus@1.6.1\Runtime\OculusLoader.cs:242 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in D:\CORE\TAFE Diploma\1_PlatformDev\As3_VR\BattleMage-VR\Library\PackageCache\com.unity.xr.oculus@1.6.1\Runtime\OculusLoader.cs:227 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.6.1/Runtime/OculusLoader.cs Line: 242)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.122 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 1404 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.1 MB.
+System memory in use after: 69.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1881.
+Total: 1.522300 ms (FindLiveObjects: 0.169600 ms CreateObjectMapping: 0.044700 ms MarkObjects: 1.289100 ms  DeleteObjects: 0.018000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1842.180857 seconds.
+  path: Assets/Scripts/Rigs/VR/VRController.cs
+  artifactKey: Guid(291d41d5c84a7b14e8521270b673bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs/VR/VRController.cs using Guid(291d41d5c84a7b14e8521270b673bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34cc9c8aadc6620d1914cead15afd0b') in 0.011713 seconds
+  Import took 0.015227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.624045 seconds.
+  path: Assets/Scripts/Rigs/VR/VRRig.cs
+  artifactKey: Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs/VR/VRRig.cs using Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87b21f1f47c0459f9464a8f7815e9b5') in 0.008028 seconds
+  Import took 0.011216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000924 seconds.
+  path: Assets/Scripts/Rigs/VR/VRRig.cs
+  artifactKey: Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rigs/VR/VRRig.cs using Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87b21f1f47c0459f9464a8f7815e9b5') in 0.002842 seconds
+  Import took 0.006090 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001666 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in D:\CORE\TAFE Diploma\1_PlatformDev\As3_VR\BattleMage-VR\Library\PackageCache\com.unity.xr.oculus@1.6.1\Runtime\OculusLoader.cs:242 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in D:\CORE\TAFE Diploma\1_PlatformDev\As3_VR\BattleMage-VR\Library\PackageCache\com.unity.xr.oculus@1.6.1\Runtime\OculusLoader.cs:227 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.6.1/Runtime/OculusLoader.cs Line: 242)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.854 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 1404 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.4 MB.
+System memory in use after: 69.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1884.
+Total: 2.772300 ms (FindLiveObjects: 0.159900 ms CreateObjectMapping: 0.047600 ms MarkObjects: 2.522100 ms  DeleteObjects: 0.041600 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

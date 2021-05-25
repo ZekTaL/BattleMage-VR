@@ -7,6 +7,7 @@ namespace BattleMage
     public class LaserVisualizer : MonoBehaviour
     {
         const float LineWidth = .1f;
+        const float MaxRayDist = 100f;
 
         [SerializeField] Color colorInvalid = Color.red;
         [SerializeField] Color colorValid = Color.green;
@@ -36,23 +37,43 @@ namespace BattleMage
         {
             ToggleVisibility(true);
 
-            bool hasHit = (Physics.Raycast(startPoint, start.forward, out RaycastHit hit, validHitLayers));
-            SetColor(hasHit);
-            UpdateScalePos(hit, hasHit);
-            if (hasHit)
+            //Find closest object hit by laser
+            RaycastHit closest;
+            RaycastHit[] hits = Physics.RaycastAll(startPoint, start.forward, MaxRayDist, validHitLayers);
+            bool hasHit = false; ;
+            if (hits.Length > 0)
             {
-                Debug.DrawLine(hit.point, hit.point + Vector3.up, Color.red, 3f);
+                hasHit = true;
+                closest = hits[0];
+                if (hits.Length > 1)
+                {
+                    float closestDist = hits[0].distance;
+                    for (int i = 1; i < hits.Length; i++)
+                    {
+                        if (hits[i].distance < closestDist)
+                        {
+                            closestDist = hits[i].distance;
+                            closest = hits[i];
+                        }
+                    }
+                }
+
+                SetColor(hasHit);
+                UpdateScalePos(closest.point, hasHit);
             }
+
+            //    Debug.DrawLine(closest.point, closest.point + Vector3.up, Color.red, 3f);
         }
+
 
         public void TurnOffLaser()
         {
             ToggleVisibility(false);
         }
 
-        void UpdateScalePos(RaycastHit hit, bool didHit)
+        void UpdateScalePos(Vector3 hitPoint, bool didHit)
         {
-            Vector3 end = didHit ? hit.point : startPoint + start.forward * 100f;
+            Vector3 end = didHit ? hitPoint : startPoint + start.forward * 100f;
             Vector3 dir = end - startPoint;
             float dist = dir.magnitude;
 
@@ -77,7 +98,7 @@ namespace BattleMage
             lineRenderer.material.color = isValidColor ? colorValid : colorInvalid;
         }
 
-        
+
         #endregion
     }
 }
