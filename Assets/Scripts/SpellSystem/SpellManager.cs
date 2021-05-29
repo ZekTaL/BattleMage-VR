@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using BattleMage.Managers;
 
 namespace BattleMage.SpellSystem
 {
@@ -14,9 +13,9 @@ namespace BattleMage.SpellSystem
         public static int rightActive;
 
         [SerializeField] SpellHud hud;
-        [SerializeField] GameObject pf_FireSpell;
-        [SerializeField] GameObject pf_GroundSpell;
-        [SerializeField] GameObject pf_PsychicSpell;
+        [SerializeField] SpellBase pf_FireSpell;
+        [SerializeField] SpellBase pf_GroundSpell;
+        [SerializeField] SpellBase pf_PsychicSpell;
 
         RigManager rigM;
         int spellCounts;
@@ -37,33 +36,23 @@ namespace BattleMage.SpellSystem
         private void Update()
         {
             //quick test
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.Q))
                 CycleLeft();
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.E))
                 CycleRight();
         }
 
-        public void HoldDownLeftTrigger ()
+        public void ShootLeft (Transform shootTransform, Vector3 hitPoint)
         {
-            //Activate laser visualizer
-            Debug.Log("press left");
+            SpellBase pf = GetSpellPf(leftActive);
+            pf = Instantiate(pf, shootTransform.position, shootTransform.rotation);
+            pf.Initialize(shootTransform, hitPoint);
         }
-
-        public void HoldDownRightTrigger()
+        public void ShootRight(Transform shootTransform, Vector3 hitPoint)
         {
-            //Activate laser visualizer
-            Debug.Log("press right");
-        }
-
-        public void ShootLeft ()
-        {
-            GameObject pf = GetSpellPf(leftActive);
-            pf = Instantiate(pf, GetLeftShootPoint().position, GetLeftShootPoint().rotation);
-        }
-        public void ShootRight()
-        {
-            GameObject pf = GetSpellPf(rightActive);
-            pf = Instantiate(pf, GetRightShootPoint().position, GetRightShootPoint().rotation);
+            SpellBase pf = GetSpellPf(rightActive);
+            pf = Instantiate(pf, shootTransform.position, shootTransform.rotation);
+            pf.Initialize(shootTransform, hitPoint);
         }
 
         public void CycleLeft ()
@@ -85,8 +74,8 @@ namespace BattleMage.SpellSystem
             return i;
         }
 
-        GameObject GetSpellPf(int index) => GetSpellPf((Spells)index);
-        GameObject GetSpellPf (Spells spells)
+        SpellBase GetSpellPf(int index) => GetSpellPf((Spells)index);
+        SpellBase GetSpellPf (Spells spells)
         {
             return spells switch
             {
@@ -96,8 +85,6 @@ namespace BattleMage.SpellSystem
             };
         }
 
-        Transform GetLeftShootPoint() => rigM.ShootPointLeft;
-        Transform GetRightShootPoint() => rigM.ShootPointRight;
         #endregion
     }
 }

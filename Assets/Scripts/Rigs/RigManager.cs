@@ -8,24 +8,25 @@ using UnityEngine;
 using BattleMage.VR;
 using BattleMage.PC;
 
-namespace BattleMage.Managers
+namespace BattleMage
 {
     [DefaultExecutionOrder(-10000)]
     public class RigManager : MonoBehaviour
     {
         public static RigManager Instance;
 
+        [SerializeField] LayerMask raycastLayers;
+        [SerializeField] Color colorInvalid = Color.red;
+        [SerializeField] Color colorValid = Color.green;
+
         public GameObject vrRig;
         public GameObject pcRig;
-        [SerializeField] Transform pc_ShootPoint_Left;
-        [SerializeField] Transform pc_ShootPoint_Right;
-        [SerializeField] Transform vr_ShootPoint_Left;
-        [SerializeField] Transform vr_ShootPoint_Right;
-
         bool inVR;
 
-        public Transform ShootPointLeft => inVR ? vr_ShootPoint_Left : pc_ShootPoint_Left;
-        public Transform ShootPointRight => inVR? vr_ShootPoint_Right : pc_ShootPoint_Right;
+        public LayerMask RaycastLayers => raycastLayers;
+        public Color ColorValid => colorValid;
+        public Color ColorInvalid => colorInvalid;
+
 
         void Awake()
         {
@@ -44,17 +45,11 @@ namespace BattleMage.Managers
                 vrRig.gameObject.SetActive(false);
                 pcRig.gameObject.SetActive(true);
             }
-
         }
 
         bool paused;
        void Update ()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Debug.Log("pc_ShootPoint_Left " + pc_ShootPoint_Left);
-            }
-
             //Pause
             if (!inVR && Input.GetKeyDown(KeyCode.Escape))
             {

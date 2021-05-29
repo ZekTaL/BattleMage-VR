@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using BattleMage;
 using BattleMage.SpellSystem;
 
 namespace BattleMage.PC
@@ -7,12 +8,17 @@ namespace BattleMage.PC
     public class PCPlayerController : MonoBehaviour
     {
         SpellManager spellM;
+        RigManager rigM;
+        [SerializeField] LaserVisualizer leftLaser;
+        [SerializeField] LaserVisualizer rightLaser;
 
-
+        Vector3 leftHitPoint;
+        Vector3 rightHitPoint;
 
         void Start()
         {
             spellM = SpellManager.Instance;
+            rigM = RigManager.Instance;
         }
 
         void Update()
@@ -22,21 +28,34 @@ namespace BattleMage.PC
 
         void InputUpdate ()
         {
-            if (Input.GetMouseButtonDown(0))
+            //Left
+            if (Input.GetMouseButtonDown(0)) //Down
             {
-                spellM.HoldDownLeftTrigger();
+                leftLaser.EnableLaser();
             }
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButton(0)) //Hold
             {
-                spellM.HoldDownRightTrigger();
+                leftHitPoint = leftLaser.HitPosition;
             }
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0)) //Release
             {
-                spellM.ShootLeft();
+                spellM.ShootLeft(leftLaser.transform, leftHitPoint);
+                leftLaser.DisableLaser();
             }
-            if (Input.GetMouseButtonUp(1))
+
+            //Right
+            if (Input.GetMouseButtonDown(1)) //Down
             {
-                spellM.ShootRight();
+                rightLaser.EnableLaser();
+            }
+            if (Input.GetMouseButton(0)) //Hold
+            {
+                rightHitPoint = rightLaser.HitPosition;
+            }
+            if (Input.GetMouseButtonUp(1)) //Release
+            {
+                spellM.ShootRight(rightLaser.transform, rightHitPoint);
+                rightLaser.DisableLaser();
             }
         }
     }

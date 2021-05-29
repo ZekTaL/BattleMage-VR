@@ -7,28 +7,27 @@ namespace BattleMage.SpellSystem
     public abstract class SpellBase : MonoBehaviour
     {
         [SerializeField] int damage = 10;
-        [SerializeField] int moveSpeed = 20;
         [SerializeField] LayerMask groundLayer;
         [SerializeField] LayerMask enemyLayer;
-        Rigidbody rb;
 
         private void Awake()
         {
-            rb = GetComponent<Rigidbody>();
-            rb.velocity = transform.forward * moveSpeed;
-            Destroy(gameObject, 8f);
+           
+        }
+
+        public virtual void Initialize (Transform shootTransform, Vector3 raycastHitPoint)
+        {
+
         }
 
         void OnTriggerEnter(Collider other)
         {
             if (HitsGround(other))
             {
-                Debug.Log("hits ground");
                 Destroy(gameObject);
             }
             if (HitsEnemy(other))
             {
-                Debug.Log("hits enemy");
                 other.GetComponent<EnemyBase>()?.TakeDamage(damage);
                 Destroy(gameObject);
             }
