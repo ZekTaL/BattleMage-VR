@@ -11,7 +11,6 @@ namespace BattleMage.SpellSystem
 
         public override void Initialize(Transform shootTransform, Vector3 raycastHitPoint)
         {
-            base.Initialize(shootTransform, raycastHitPoint);
             rb = GetComponent<Rigidbody>();
             rb.velocity = transform.forward * moveSpeed;
             Destroy(gameObject, lifeDuration);

@@ -5,26 +5,27 @@ using BattleMage.VR;
 
 namespace BattleMage.VR
 {
-    [RequireComponent(typeof(Pointer))]
+    [RequireComponent(typeof(LaserVisualizer))]
     public class Teleporter : MonoBehaviour
     {
-        [SerializeField, HideInInspector] private Pointer pointer;
+        [SerializeField] private LaserVisualizer pointer;
+        [SerializeField] private VRController controller;
 
         private void OnValidate()
         {
-            pointer = gameObject.GetComponent<Pointer>();
+            pointer = gameObject.GetComponent<LaserVisualizer>();
         }
-        // Start is called before the first frame update
+
         void Start()
         {
             if (pointer == null)
-                pointer = gameObject.GetComponent<Pointer>();
+                pointer = gameObject.GetComponent<LaserVisualizer>();
 
-            pointer.controller.Input.OnTeleportPressed.AddListener(args =>
+            controller.Input.OnTeleportPressed.AddListener(args =>
             {
-                if (pointer.Endpoint != Vector3.zero)
+                if (pointer.HitPosition != Vector3.zero)
                 {
-                    VRRig.instance.PlayerArea.position = pointer.Endpoint;
+                    VRRig.instance.PlayerArea.position = pointer.HitPosition;
                 }
             });
         }

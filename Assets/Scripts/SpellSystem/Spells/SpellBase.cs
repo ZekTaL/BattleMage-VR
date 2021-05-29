@@ -10,15 +10,7 @@ namespace BattleMage.SpellSystem
         [SerializeField] LayerMask groundLayer;
         [SerializeField] LayerMask enemyLayer;
 
-        private void Awake()
-        {
-           
-        }
-
-        public virtual void Initialize (Transform shootTransform, Vector3 raycastHitPoint)
-        {
-
-        }
+        public abstract void Initialize(Transform shootTransform, Vector3 raycastHitPoint);
 
         void OnTriggerEnter(Collider other)
         {

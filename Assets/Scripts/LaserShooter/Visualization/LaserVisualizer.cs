@@ -36,7 +36,6 @@ namespace BattleMage
             rigM = RigManager.Instance;
             raycastLayers = rigM.RaycastLayers;
             
-
             //Initialize
             SetColor(false);
             cube.gameObject.SetActive(false);
@@ -63,7 +62,12 @@ namespace BattleMage
             UpdateScalePos(startPoint, HitPosition);
         }
 
-        public void EnableLaser() => ToggleVisibility(true);
+        public void EnableLaser()
+        {
+            ToggleVisibility(true);
+            Update();
+        }
+
         public void DisableLaser() => ToggleVisibility(false);
 
         void UpdateScalePos(Vector3 startPoint, Vector3 end)
