@@ -18,9 +18,16 @@ namespace BattleMage.SpellSystem
         [SerializeField] SpellBase pf_PsychicSpell;
 
         RigManager rigM;
+        FirePointReferencer firePoints;
+
+        //Status
+        SpellBase holdingSpellLeft;
+        SpellBase holdingSpellRight;
+
+        //Cache
         int spellCounts;
 
-        private void Awake()
+        void Awake()
         {
             Instance = this;
             spellCounts = Enum.GetValues(typeof(Spells)).Length;
@@ -28,42 +35,43 @@ namespace BattleMage.SpellSystem
             hud.UpdateRight();
         }
 
-        private void Start()
+        void Start()
         {
             rigM = RigManager.Instance;
+            firePoints = FirePointReferencer.Instance;
         }
 
-        private void Update()
-        {
-            //quick test
-            if (Input.GetKeyDown(KeyCode.Q))
-                CycleLeft();
-            if (Input.GetKeyDown(KeyCode.E))
-                CycleRight();
-        }
-
-        public void ShootLeft (Transform shootTransform, Vector3 hitPoint)
+        public void PressedTrigger(bool isLeft)
         {
             SpellBase pf = GetSpellPf(leftActive);
-            pf = Instantiate(pf, shootTransform.position, shootTransform.rotation);
-            pf.Initialize(shootTransform, hitPoint);
-        }
-        public void ShootRight(Transform shootTransform, Vector3 hitPoint)
-        {
-            SpellBase pf = GetSpellPf(rightActive);
-            pf = Instantiate(pf, shootTransform.position, shootTransform.rotation);
-            pf.Initialize(shootTransform, hitPoint);
+            pf = Instantiate(pf, FirepointOrigin(isLeft), FirepointRotation(isLeft));
+            pf.Initialize(GetFirepoint(isLeft));
+            if (isLeft)
+                holdingSpellLeft = pf;
+            else
+                holdingSpellRight = pf;
         }
 
-        public void CycleLeft ()
+        public void ReleasedTrigger(bool isLeft)
         {
-            leftActive = IncrementIndex(leftActive);
-            hud.UpdateLeft();
+            if (isLeft)
+                holdingSpellLeft?.ReleaseSpell();
+            else
+                holdingSpellRight?.ReleaseSpell();
         }
-        public void CycleRight()
+
+        public void PressedToggleSpell(bool isLeft)
         {
-            rightActive = IncrementIndex(rightActive);
-            hud.UpdateRight();
+            if (isLeft)
+            {
+                leftActive = IncrementIndex(leftActive);
+                hud.UpdateLeft();
+            }
+            else
+            {
+                rightActive = IncrementIndex(rightActive);
+                hud.UpdateRight();
+            }
         }
 
         #region helper
@@ -74,8 +82,25 @@ namespace BattleMage.SpellSystem
             return i;
         }
 
+        Firepoint GetFirepoint(bool isLeft) => isLeft ? firePoints.Left : firePoints.Right;
+
+        Vector3 FirepointOrigin(bool isLeft) =>
+            isLeft
+            ? firePoints.Left.transform.position
+            : firePoints.Right.transform.position;
+
+        Vector3 FirepointHitPoint(bool isLeft) =>
+            isLeft
+            ? firePoints.Left.HitPosition
+            : firePoints.Right.HitPosition;
+
+        Quaternion FirepointRotation(bool isLeft) =>
+            isLeft
+            ? firePoints.Left.transform.rotation
+            : firePoints.Right.transform.rotation;
+
         SpellBase GetSpellPf(int index) => GetSpellPf((Spells)index);
-        SpellBase GetSpellPf (Spells spells)
+        SpellBase GetSpellPf(Spells spells)
         {
             return spells switch
             {
@@ -84,7 +109,6 @@ namespace BattleMage.SpellSystem
                 _ => pf_PsychicSpell,
             };
         }
-
         #endregion
     }
 }

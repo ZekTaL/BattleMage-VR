@@ -6,26 +6,60 @@ namespace BattleMage.SpellSystem
 {
     public abstract class SpellBase : MonoBehaviour
     {
-        [SerializeField] int damage = 10;
         [SerializeField] LayerMask groundLayer;
         [SerializeField] LayerMask enemyLayer;
 
-        public abstract void Initialize(Transform shootTransform, Vector3 raycastHitPoint);
+        protected LayerMask combinedLayerMasks;
+        protected Firepoint firepoint;
+        protected Transform firepointTrans;
 
-        void OnTriggerEnter(Collider other)
+        public virtual void Initialize(Firepoint firepoint)
         {
-            if (HitsGround(other))
-            {
-                Destroy(gameObject);
-            }
-            if (HitsEnemy(other))
-            {
-                other.GetComponent<EnemyBase>()?.TakeDamage(damage);
-                Destroy(gameObject);
-            }
+            this.firepoint = firepoint;
+            firepointTrans = firepoint.transform;
+            combinedLayerMasks = groundLayer | enemyLayer;
         }
 
-        bool HitsGround (Collider collider) => groundLayer == (groundLayer | 1 << collider.gameObject.layer);
-        bool HitsEnemy (Collider collider) => enemyLayer == (enemyLayer | 1 << collider.gameObject.layer);
+        public virtual void ReleaseSpell ()
+        {
+
+        }
+
+        protected virtual void DestroyBullet()
+        {
+            Destroy(gameObject);
+        }
+
+        protected virtual void HitsGround()
+        {
+            //DestroyBullet();
+        }
+
+        protected virtual void HitsEnemy(Collider other)
+        {
+            //DestroyBullet();
+            //other.GetComponent<EnemyBase>()?.TakeDamage(damage);
+        }
+    
+        protected void MatchFirepointTransform ()
+        {
+            transform.position = firepointTrans.position;
+            transform.rotation = firepointTrans.rotation;
+        }
+
+        protected bool IsTargetGround(Collider collider) => groundLayer == (groundLayer | 1 << collider.gameObject.layer);
+        protected bool IsTargetEnemy(Collider collider) => enemyLayer == (enemyLayer | 1 << collider.gameObject.layer);
+
+        //void OnTriggerEnter(Collider other)
+        //{
+        //    if (IsTargetGround(other))
+        //    {
+        //        HitsGround();
+        //    }
+        //    if (IsTargetEnemy(other))
+        //    {
+        //        HitsEnemy(other);
+        //    }
+        //}
     }
 }

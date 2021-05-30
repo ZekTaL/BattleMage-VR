@@ -3,24 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace BattleMage
 {
-    public static GameManager Instance;
-
-    const int SceneIndex_Menu = 0;
-
-    public void LoadMenuScene()
+    public class GameManager : MonoBehaviour
     {
-        SceneManager.LoadScene(SceneIndex_Menu);
-    }
+        public static GameManager Instance;
 
-    public void RestartGame ()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+        const int SceneIndex_Menu = 0;
 
-    void Awake()
-    {
-        Instance = this;
+        UIManager uiM;
+
+        int kills;
+
+        void Awake()
+        {
+            Instance = this;
+        }
+
+        void Start()
+        {
+            uiM = UIManager.Instance;
+        }
+
+        //---------------------
+        public void LoadMenuScene()
+        {
+            SceneManager.LoadScene(SceneIndex_Menu);
+        }
+
+        public void RestartGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        public void IncreaseKill()
+        {
+            uiM.SetKillScore(++kills);
+        }
     }
 }
