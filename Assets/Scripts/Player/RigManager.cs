@@ -14,7 +14,7 @@ namespace BattleMage
     public class RigManager : MonoBehaviour
     {
         public static RigManager Instance;
-        public static Camera mainCamera;
+        public static Camera MainCamera;
 
         [SerializeField] GameObject vrRig;
         [SerializeField] GameObject pcRig;
@@ -34,7 +34,7 @@ namespace BattleMage
             {
                 vrRig.gameObject.SetActive(true);
                 pcRig.gameObject.SetActive(false);
-                mainCamera = vrCamera;
+                MainCamera = vrCamera;
                 //pcCamera.tag = "Untagged";
             }
             else //In PC rig
@@ -42,7 +42,7 @@ namespace BattleMage
                 PCCursorManager.HideCursor();
                 vrRig.gameObject.SetActive(false);
                 pcRig.gameObject.SetActive(true);
-                mainCamera = pcCamera;
+                MainCamera = pcCamera;
                 //vrCamera.tag = "Untagged";
             }
         }

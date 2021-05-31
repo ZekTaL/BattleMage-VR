@@ -4,7 +4,9 @@ using UnityEngine;
 
 namespace BattleMage
 {
-    //References the firing position of the rig
+    //This script references the firing position of the rig. 
+    //It also comes with a laser that can be activated so you can see 
+    //where you're shooting
     public class Firepoint : MonoBehaviour
     {
         const float LineWidth = 0.1f;
@@ -81,8 +83,6 @@ namespace BattleMage
         void ToggleOn(bool isOn)
         {
             this.isOn = isOn;
-            Debug.Log("laserTransform " + (laserTransform == null));
-            Debug.Log("laserTransform.gameObject " + (laserTransform.gameObject == null));
             laserTransform.gameObject.SetActive(isOn);
         }
 

@@ -5,6 +5,7 @@ using BattleMage.SpellSystem;
 
 namespace BattleMage
 {
+    //This class hooks the VR input events to the various methods inside the player manager
     public class VRInputFuncitonalityConnector : MonoBehaviour
     {
         public VRController LController;
@@ -13,22 +14,22 @@ namespace BattleMage
 
         void Start()
         {
-            //Press grab = Laser visualizer 
-            //Release grab = shoot attack
-            LController.Input.OnGrabPressed.AddListener(_args => //Shoot 
+            //LEFT
+            LController.Input.OnGrabPressed.AddListener(_args =>  //Press trigger
             {
                 playerManager.PressedTrigger(true);
             });
-            LController.Input.OnGrabReleased.AddListener(_args => //Shoot 
+            LController.Input.OnGrabReleased.AddListener(_args => //Release trigger
             {
                 playerManager.ReleasedTrigger(true);
             });
 
-            LController.Input.OnGrabPressed.AddListener(_args => //Shoot 
+            //RIGHT
+            RController.Input.OnGrabPressed.AddListener(_args => //Press trigger
             {
                 playerManager.PressedTrigger(false);
             });
-            LController.Input.OnGrabReleased.AddListener(_args => //Shoot 
+            RController.Input.OnGrabReleased.AddListener(_args =>  //Release trigger
             {
                 playerManager.ReleasedTrigger(false);
             });

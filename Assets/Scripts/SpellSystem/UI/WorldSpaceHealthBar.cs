@@ -21,7 +21,7 @@ namespace BattleMage
 
         void Start()
         {
-            cam = RigManager.mainCamera.transform;
+            cam = RigManager.MainCamera.transform;
         }
 
         void Update()

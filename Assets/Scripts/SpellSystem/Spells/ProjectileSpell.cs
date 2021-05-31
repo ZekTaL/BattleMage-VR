@@ -23,8 +23,6 @@ namespace BattleMage.SpellSystem
             base.Initialize(firepoint);
             rb = GetComponent<Rigidbody>();
             firepoint.ToggleLaser(true);
-
-            Destroy(gameObject, lifeDuration);
         }
 
         public override void ReleaseSpell()
@@ -34,6 +32,8 @@ namespace BattleMage.SpellSystem
             col.enabled = true;
             rb.velocity = transform.forward * moveSpeed;
             isReleased = true;
+
+            Destroy(gameObject, lifeDuration);
         }
 
         protected override void DestroyBullet()
