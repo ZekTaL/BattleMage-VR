@@ -5,21 +5,21 @@ using BattleMage.VR;
 
 namespace BattleMage.VR
 {
-    [RequireComponent(typeof(Firepoint))]
+    [RequireComponent(typeof(LaserCaster))]
     public class Teleporter : MonoBehaviour
     {
-        [SerializeField] private Firepoint pointer;
+        [SerializeField] private LaserCaster pointer;
         [SerializeField] private VRController controller;
 
         private void OnValidate()
         {
-            pointer = gameObject.GetComponent<Firepoint>();
+            pointer = gameObject.GetComponent<LaserCaster>();
         }
 
         void Start()
         {
             if (pointer == null)
-                pointer = gameObject.GetComponent<Firepoint>();
+                pointer = gameObject.GetComponent<LaserCaster>();
 
             controller.Input.OnTeleportPressed.AddListener(args =>
             {

@@ -18,7 +18,7 @@ namespace BattleMage.SpellSystem
         Rigidbody rb;
         bool isReleased;
 
-        public override void Initialize(Firepoint firepoint)
+        public override void Initialize(LaserCaster firepoint)
         {
             base.Initialize(firepoint);
             rb = GetComponent<Rigidbody>();

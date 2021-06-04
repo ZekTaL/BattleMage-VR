@@ -10,10 +10,10 @@ namespace BattleMage.SpellSystem
         [SerializeField] LayerMask enemyLayer;
 
         protected LayerMask combinedLayerMasks;
-        protected Firepoint firepoint;
+        protected LaserCaster firepoint;
         protected Transform firepointTrans;
 
-        public virtual void Initialize(Firepoint firepoint)
+        public virtual void Initialize(LaserCaster firepoint)
         {
             this.firepoint = firepoint;
             firepointTrans = firepoint.transform;

@@ -82,7 +82,7 @@ namespace BattleMage.SpellSystem
             return i;
         }
 
-        Firepoint GetFirepoint(bool isLeft) => isLeft ? firePoints.Left : firePoints.Right;
+        LaserCaster GetFirepoint(bool isLeft) => isLeft ? firePoints.Left : firePoints.Right;
 
         Vector3 FirepointOrigin(bool isLeft) =>
             isLeft

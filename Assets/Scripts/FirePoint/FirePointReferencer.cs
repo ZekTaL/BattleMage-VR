@@ -6,16 +6,16 @@ namespace BattleMage
     public class FirePointReferencer : MonoBehaviour
     {
         public static FirePointReferencer Instance;
-        [SerializeField] Firepoint PCLeft;
-        [SerializeField] Firepoint PCRight;
-        [SerializeField] Firepoint VRLeft;
-        [SerializeField] Firepoint VRRight;
+        [SerializeField] LaserCaster PCLeft;
+        [SerializeField] LaserCaster PCRight;
+        [SerializeField] LaserCaster VRLeft;
+        [SerializeField] LaserCaster VRRight;
 
         RigManager rigManager;
         bool inVR;
 
-        public Firepoint Left => inVR ? VRLeft : PCLeft;
-        public Firepoint Right => inVR ? VRRight : PCRight;
+        public LaserCaster Left => inVR ? VRLeft : PCLeft;
+        public LaserCaster Right => inVR ? VRRight : PCRight;
 
         private void Awake()
         {
