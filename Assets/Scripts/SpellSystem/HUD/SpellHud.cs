@@ -23,7 +23,7 @@ namespace BattleMage.SpellSystem
             spriteLookup = new Dictionary<Spells, Sprite>()
             {
                 {Spells.Fireball, icon_FireBall },
-                {Spells.GroundCrack, icon_GroundCrack},
+                //{Spells.GroundCrack, icon_GroundCrack},
                 {Spells.Psychic, icon_Psychic},
             };
         }
@@ -44,7 +44,7 @@ namespace BattleMage.SpellSystem
             return spell switch
             {
                 Spells.Fireball => icon_FireBall,
-                Spells.GroundCrack => icon_GroundCrack,
+                //Spells.GroundCrack => icon_GroundCrack,
                 _ => icon_Psychic,
             };
         }

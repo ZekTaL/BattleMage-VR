@@ -13,6 +13,7 @@ namespace BattleMage
     [DefaultExecutionOrder(-10000)]
     public class RigManager : MonoBehaviour
     {
+       
         public static RigManager Instance;
         public static Camera MainCamera;
 
@@ -32,6 +33,7 @@ namespace BattleMage
             inVR = VRUtil.IsVREnabled();
             if (inVR)
             {
+                Debug.Log("in vr rig");
                 vrRig.gameObject.SetActive(true);
                 pcRig.gameObject.SetActive(false);
                 MainCamera = vrCamera;
@@ -39,6 +41,7 @@ namespace BattleMage
             }
             else //In PC rig
             {
+                Debug.Log("in pc rig");
                 PCCursorManager.HideCursor();
                 vrRig.gameObject.SetActive(false);
                 pcRig.gameObject.SetActive(true);

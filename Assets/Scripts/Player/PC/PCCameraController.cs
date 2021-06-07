@@ -28,7 +28,6 @@ public class PCCameraController : MonoBehaviour
 
         transform.localRotation = originalRotation * xRot * yRot;
     }
-
     void Start()
     {
         originalRotation = transform.localRotation;

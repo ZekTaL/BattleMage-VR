@@ -64,10 +64,6 @@ namespace BattleMage.Enemies
                 NormalModeUpdate();
             }
 
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                EnterLiftMode();
-            }
             UpdateDamageFlash();
         }
         #endregion
@@ -121,7 +117,7 @@ namespace BattleMage.Enemies
                 currentGravity = Mathf.Lerp(currentGravity, 0f, 0.05f);
             }
 
-            transform.Translate(Vector3.up * currentGravity * Time.deltaTime);
+            transform.Translate(Vector3.up * currentGravity * Time.deltaTime, Space.World);
 
             //Random rotation
             transform.Rotate(liftRotation * Time.deltaTime);
@@ -153,6 +149,7 @@ namespace BattleMage.Enemies
             }
         }
 
+        #region Util
         void UpdateDamageFlash()
         {
             //Update renderer red
@@ -170,5 +167,6 @@ namespace BattleMage.Enemies
 
         bool OnGround => transform.position.y <= 0;
         bool ReachedLiftElevation => transform.position.y > liftTargetElevation;
+        #endregion
     }
 }

@@ -2,6 +2,6 @@
 {
     public enum Spells
     {
-        Fireball, GroundCrack, Psychic
+        Fireball, Psychic
     }
 }

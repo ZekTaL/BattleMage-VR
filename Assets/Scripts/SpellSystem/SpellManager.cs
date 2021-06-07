@@ -14,7 +14,7 @@ namespace BattleMage.SpellSystem
 
         [SerializeField] SpellHud hud;
         [SerializeField] SpellBase pf_FireSpell;
-        [SerializeField] SpellBase pf_GroundSpell;
+        //[SerializeField] SpellBase pf_GroundSpell;
         [SerializeField] SpellBase pf_PsychicSpell;
 
         RigManager rigM;
@@ -105,7 +105,7 @@ namespace BattleMage.SpellSystem
             return spells switch
             {
                 Spells.Fireball => pf_FireSpell,
-                Spells.GroundCrack => pf_GroundSpell,
+                //Spells.GroundCrack => pf_GroundSpell,
                 _ => pf_PsychicSpell,
             };
         }
