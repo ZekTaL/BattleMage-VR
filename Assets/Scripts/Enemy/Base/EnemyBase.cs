@@ -7,7 +7,7 @@ namespace BattleMage.Enemies
     {
         #region Fields and Mono
         const float rotationMaxDelta = 90f;
-        const float gravityAcceleration = 10f;
+        const float gravityAcceleration = 100f;
         const float moveSpeed = 2f;
 
         [SerializeField] int maxHealth = 10;
@@ -74,7 +74,7 @@ namespace BattleMage.Enemies
             currentGravity = 0f;
             inLiftMode = true;
 
-            liftTargetElevation = Random.Range(2f, 30f);
+            liftTargetElevation = Random.Range(30f, 100f);
             objRenderer.material.color = Color.blue;
             liftRotation = new Vector3(
                 Random.Range(-100f, 100f),
