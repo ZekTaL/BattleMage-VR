@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1204598899528760753}
   - component: {fileID: 1204598899528760758}
   - component: {fileID: 1204598899528760759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,11 +91,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1204598899791501658}
   - component: {fileID: 1204598899791501652}
-  - component: {fileID: 4445162841715145806}
-  m_Layer: 0
+  - component: {fileID: 405268795256579263}
+  m_Layer: 8
   m_Name: LaserVisualizer
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -106,7 +106,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204598899791501659}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.555226, y: -0.9889878, z: 0.08416714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -128,9 +128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raycastLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 192
   cubePrimitive: {fileID: 1204598899528760757}
---- !u!114 &4445162841715145806
+--- !u!114 &405268795256579263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -34,7 +34,7 @@ namespace BattleMage
 
         private IEnumerator Spawn()
         {
-            while (!PlayerManager.PlayerDead)
+            //while (!PlayerManager.PlayerDead)
             {
                 yield return new WaitForSeconds(spawnInterval);
                 spawnInterval -= spawnInterval * 0.02f;
