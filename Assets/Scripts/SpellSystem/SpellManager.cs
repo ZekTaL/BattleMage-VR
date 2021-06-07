@@ -43,7 +43,7 @@ namespace BattleMage.SpellSystem
 
         public void PressedTrigger(bool isLeft)
         {
-            SpellBase pf = GetSpellPf(leftActive);
+            SpellBase pf = GetSpellPf(isLeft ? leftActive : rightActive);
             pf = Instantiate(pf, FirepointOrigin(isLeft), FirepointRotation(isLeft));
             pf.Initialize(GetFirepoint(isLeft));
             if (isLeft)
