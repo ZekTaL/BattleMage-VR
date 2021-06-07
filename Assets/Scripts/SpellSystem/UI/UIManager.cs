@@ -10,10 +10,11 @@ namespace BattleMage
 
         public static UIManager Instance;
 
-        [SerializeField] GameObject GameOverGroup;
         [SerializeField] Text healthText;
         [SerializeField] Text killText;
         [SerializeField] Image damageRed;
+        [SerializeField] GameObject GameOverGroup_PC;
+        [SerializeField] GameObject GameOverGroup_VR;
 
         //Status
         float damageAlpha;
@@ -50,8 +51,14 @@ namespace BattleMage
         public void RevealGameOverScreen()
         {
             PCCursorManager.RevealCursor();
-
-            Instance.GameOverGroup.SetActive(true);
+            if(RigManager.Instance.inVR)
+            {
+                GameOverGroup_VR.SetActive(true);
+            }
+            else
+            {
+                GameOverGroup_PC.SetActive(true);
+            }
         }
 
         public void Clicked_RestartGame ()

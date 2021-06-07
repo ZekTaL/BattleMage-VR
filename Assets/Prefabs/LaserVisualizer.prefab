@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204598899791501658}
   - component: {fileID: 1204598899791501652}
+  - component: {fileID: 4445162841715145806}
   m_Layer: 0
   m_Name: LaserVisualizer
   m_TagString: Untagged
@@ -125,4 +126,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff45edaa9e70cae4cbac7cd331e3b2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  raycastLayers:
+    serializedVersion: 2
+    m_Bits: 0
   cubePrimitive: {fileID: 1204598899528760757}
+--- !u!114 &4445162841715145806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204598899791501659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ecc0d0e7f593040aac6b888b36315e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickAction:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  uiMask:
+    serializedVersion: 2
+    m_Bits: 32
+  laser: {fileID: 1204598899791501652}

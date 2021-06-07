@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using BattleMage.SpellSystem;
 using UnityEngine;
+using BattleMage.Enemies;
 
 namespace BattleMage
 {
@@ -10,7 +11,9 @@ namespace BattleMage
     {
         #region Field and mono
         public static PlayerManager Instance;
-        public static bool PlayerDead;
+        public static bool PlayerDead => Instance.playerDead;
+        bool playerDead = false;
+
 
         [SerializeField] Collider col;
 
@@ -46,6 +49,17 @@ namespace BattleMage
                 //model.SetActive(false);
 
                 uiM.RevealGameOverScreen();
+
+                playerDead = true;
+                
+
+                var enemies = FindObjectsOfType<EnemyBase>();
+                foreach (var e in enemies)
+                {
+                    Destroy(e.gameObject);
+                }
+
+                //Time.timeScale = 0f;
             }
         }
 

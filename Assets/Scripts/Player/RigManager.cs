@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using BattleMage.VR;
 using BattleMage.PC;
+using UnityEngine.EventSystems;
 
 namespace BattleMage
 {
@@ -21,6 +22,8 @@ namespace BattleMage
         [SerializeField] GameObject pcRig;
         [SerializeField] Camera vrCamera;
         [SerializeField] Camera pcCamera;
+        [SerializeField] StandaloneInputModule inputSystemModule;
+        [SerializeField] VRInputModule vrModule;
 
         public bool inVR { get; private set; }
         bool paused;
@@ -44,6 +47,18 @@ namespace BattleMage
             //    else
             //        PCCursorManager.HideCursor();
             //}
+            if(inVR && inputSystemModule.enabled)
+            {
+                inputSystemModule.enabled = false;
+                vrModule.enabled = true;
+                UnityEngine.EventSystems.EventSystem.current.UpdateModules();
+            }
+            else if (!inVR && vrModule.enabled)
+            {
+                vrModule.enabled = false;
+                inputSystemModule.enabled = true;
+                UnityEngine.EventSystems.EventSystem.current.UpdateModules();
+            }
         }
 
         private void OnGUI()

@@ -31,7 +31,7 @@ namespace BattleMage
             inputModule = FindObjectOfType<VRInputModule>();
         }
 
-        void Update()
+        void LateUpdate()
         {
             inputModule.ControllerButtonDown = clickAction.stateDown;
             inputModule.ControllerButtonUp = clickAction.stateUp;
@@ -47,10 +47,10 @@ namespace BattleMage
             //When we put mouse over UI, it'll make the laser appear
             //The canvas has to have a box collider
             inputModule.ControllerPosition = position;
-            //if (pointer != null)
-            //{
-            //    pointer.Active = hitUI;
-            //}
+            if (laser != null)
+            {
+                laser.ToggleLaser(hitUI);
+            }
         }
     }
 

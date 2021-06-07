@@ -29,7 +29,7 @@ namespace BattleMage
         public override void Process() //Update loop for input modules
         {
             data.Reset();
-            data.position = (Vector2)ControllerPosition;
+            data.position = (Vector2)vrCamera.WorldToScreenPoint(ControllerPosition);
 
             //Raycast
             eventSystem.RaycastAll(data, m_RaycastResultCache);

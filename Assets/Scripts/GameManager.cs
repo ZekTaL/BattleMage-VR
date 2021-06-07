@@ -33,8 +33,16 @@ namespace BattleMage
 
         public void RestartGame()
         {
+            Debug.Log("RESTART!!!");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
+
+
 
         public void IncreaseKill()
         {

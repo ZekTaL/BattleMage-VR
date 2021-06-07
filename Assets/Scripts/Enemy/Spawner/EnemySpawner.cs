@@ -27,10 +27,10 @@ namespace BattleMage
             StartCoroutine(Spawn());
         }
 
-        //public void StopSpawning()
-        //{
-        //    //StopCoroutine(Spawn());
-        //}
+        public void StopSpawning()
+        {
+            StopCoroutine(Spawn());
+        }
 
         private IEnumerator Spawn()
         {

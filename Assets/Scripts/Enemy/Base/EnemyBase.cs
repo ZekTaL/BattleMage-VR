@@ -36,6 +36,13 @@ namespace BattleMage.Enemies
             healthBarCanvas.worldCamera = Camera.main;
         }
 
+        //private void Update()
+        //{
+        //    if (PlayerManager.PlayerDead)
+        //    {
+        //        Destroy(gameObject);
+        //    }
+        //}
 
         void OnTriggerEnter(Collider other)
         {
@@ -55,6 +62,11 @@ namespace BattleMage.Enemies
 
         private void Update()
         {
+            if (PlayerManager.PlayerDead)
+            {
+                Destroy(gameObject);
+            }
+
             if (inLiftMode)
             {
                 LiftModeUpdate();
@@ -127,6 +139,8 @@ namespace BattleMage.Enemies
         {
             if (OnGround)
             {
+                
+
                 //Rotate towards player
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-transform.position, Vector3.up), rotationMaxDelta * Time.deltaTime);
 

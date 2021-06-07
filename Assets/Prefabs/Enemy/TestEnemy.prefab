@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1333055451}
   - component: {fileID: 1333055450}
   - component: {fileID: 1333055453}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 966705912096915921}
   - component: {fileID: 966705912096915923}
   - component: {fileID: 966705912096915922}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HPBar_BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 966705913028690535}
   - component: {fileID: 966705913028690537}
   - component: {fileID: 966705913028690536}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HPBar_FG (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf7678c1194d824c88bc7b05bfd13f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.2
   maxHealth: 10
   objRenderer: {fileID: 5184154379010748113}
   playerLayer:
