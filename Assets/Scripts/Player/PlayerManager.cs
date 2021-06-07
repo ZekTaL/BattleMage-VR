@@ -17,7 +17,7 @@ namespace BattleMage
         RigManager rigManager;
         UIManager uiM;
         SpellManager spellM;
-        int currentHealth = 100;
+        int currentHealth = 1000000;
         
         void Awake()
         {

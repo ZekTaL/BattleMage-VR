@@ -74,7 +74,7 @@ namespace BattleMage.Enemies
             currentGravity = 0f;
             inLiftMode = true;
 
-            liftTargetElevation = Random.Range(30f, 100f);
+            liftTargetElevation = Random.Range(100f, 200f);
             objRenderer.material.color = Color.blue;
             liftRotation = new Vector3(
                 Random.Range(-100f, 100f),
