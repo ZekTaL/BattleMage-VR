@@ -10,10 +10,10 @@ using BattleMage.PC;
 
 namespace BattleMage
 {
-    [DefaultExecutionOrder(-10000)]
+    [DefaultExecutionOrder(-100000)]
     public class RigManager : MonoBehaviour
     {
-       
+
         public static RigManager Instance;
         public static Camera MainCamera;
 
@@ -25,12 +25,41 @@ namespace BattleMage
         public bool inVR { get; private set; }
         bool paused;
 
-        void Awake()
+        void Start()
         {
             //Init
             Instance = this;
-            
+
             inVR = VRUtil.IsVREnabled();
+            ActivateRig();
+        }
+
+        void Update()
+        {
+            ////Pause
+            //if (!inVR && Input.GetKeyDown(KeyCode.Escape))
+            //{
+            //    if (paused = !paused)
+            //        PCCursorManager.RevealCursor();
+            //    else
+            //        PCCursorManager.HideCursor();
+            //}
+        }
+
+        private void OnGUI()
+        {
+            GUI.Label(new Rect(20, 20, 200, 20), "InVR: " + inVR);
+        }
+
+        public void ToggleRig ()
+        {
+            inVR = !inVR;
+            ActivateRig();
+            VR.VRUtil.SetVREnabled(inVR);
+        }
+
+        void ActivateRig ()
+        {
             if (inVR)
             {
                 Debug.Log("in vr rig");
@@ -42,23 +71,11 @@ namespace BattleMage
             else //In PC rig
             {
                 Debug.Log("in pc rig");
-                PCCursorManager.HideCursor();
+                //PCCursorManager.HideCursor();
                 vrRig.gameObject.SetActive(false);
                 pcRig.gameObject.SetActive(true);
                 MainCamera = pcCamera;
                 //vrCamera.tag = "Untagged";
-            }
-        }
-
-       void Update ()
-        {
-            //Pause
-            if (!inVR && Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (paused = !paused)
-                    PCCursorManager.RevealCursor();
-                else
-                    PCCursorManager.HideCursor();
             }
         }
     }

@@ -12,10 +12,19 @@ namespace BattleMage
         [SerializeField] LaserCaster VRRight;
 
         RigManager rigManager;
-        bool inVR;
 
-        public LaserCaster Left => inVR ? VRLeft : PCLeft;
-        public LaserCaster Right => inVR ? VRRight : PCRight;
+        public LaserCaster Left
+        {
+            get
+            {
+                Debug.Log("rigManager.inVR: " + rigManager.inVR);
+                Debug.DrawLine(new Vector3(0, 10f, 0f), VRLeft.transform.position, Color.yellow, 0.2f);
+                Debug.DrawLine(Vector3.zero, PCLeft.transform.position, Color.blue, 0.2f);
+
+                return rigManager.inVR? VRLeft : PCLeft;
+            }
+        }
+        public LaserCaster Right => rigManager.inVR ? VRRight : PCRight;
 
         private void Awake()
         {
@@ -25,7 +34,6 @@ namespace BattleMage
         void Start()
         {
             rigManager = RigManager.Instance;
-            inVR = rigManager.inVR;
         }
     }
 }

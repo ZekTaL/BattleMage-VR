@@ -45,6 +45,7 @@ namespace BattleMage.SpellSystem
         {
             SpellBase pf = GetSpellPf(isLeft ? leftActive : rightActive);
             pf = Instantiate(pf, FirepointOrigin(isLeft), FirepointRotation(isLeft));
+            Debug.DrawLine(Vector3.zero, FirepointOrigin(isLeft), Color.red, 0.2f);
             pf.Initialize(GetFirepoint(isLeft));
             if (isLeft)
                 holdingSpellLeft = pf;

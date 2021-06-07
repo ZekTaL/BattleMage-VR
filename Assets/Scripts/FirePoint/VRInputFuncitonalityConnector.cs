@@ -35,11 +35,13 @@ namespace BattleMage
             });
 
             //Spell 
-            LController.Input.OnInteractPressed.AddListener(_args => //Cycle 
+            LController.Input.OnTeleportPressed.AddListener(_args => //Cycle 
+            //LController.Input.OnInteractPressed.AddListener(_args => //Cycle 
             {
                 playerManager.PressedToggleSpell(true);
             });
-            RController.Input.OnInteractPressed.AddListener(_args => //Cycle 
+            RController.Input.OnTeleportPressed.AddListener(_args => //Cycle 
+            //RController.Input.OnInteractPressed.AddListener(_args => //Cycle 
             {
                 playerManager.PressedToggleSpell(false);
             });

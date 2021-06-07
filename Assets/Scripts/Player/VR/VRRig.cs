@@ -21,10 +21,7 @@ namespace BattleMage.VR
         private void Awake()
         {
             SingletonValidation();
-        }
-
-        void Start()
-        {
+        
             //Validate all the transform ocmponents
             ValidateComponent(LeftController);
             ValidateComponent(RightController);
