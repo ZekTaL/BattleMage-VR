@@ -8,6 +8,6 @@ public class AttackCheck : Condition
 {
     public override bool ConditionsCheck(Agent agent)
     {
-        throw new System.NotImplementedException();
+        return false;
     }
 }

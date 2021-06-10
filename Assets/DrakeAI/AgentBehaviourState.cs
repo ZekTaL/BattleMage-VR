@@ -7,6 +7,9 @@ public class AgentBehaviourState : AgentState
 {
     public override AgentState RunCurrentState(Agent agent)
     {
+        //behaviours go here
+        AgentHandler.Instance.SpawnFromPool("Agent", agent);
+
         foreach (State state in agent.currentState.stateMachine)
         {
             bool AllTrue = true;
