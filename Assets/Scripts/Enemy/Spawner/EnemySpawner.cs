@@ -19,6 +19,10 @@ namespace BattleMage
         private void Awake()
         {
             Instance = this;
+        }
+
+        private void Start()
+        {
             BeginSpawning();
         }
 
@@ -34,13 +38,12 @@ namespace BattleMage
 
         private IEnumerator Spawn()
         {
-            //while (!PlayerManager.PlayerDead)
+            while (!PlayerManager.PlayerDead)
             {
                 yield return new WaitForSeconds(spawnInterval);
                 spawnInterval -= spawnInterval * 0.02f;
 
                 SpawnObject();
-                //StartCoroutine(Spawn());
             }
         }
 
