@@ -16,6 +16,13 @@ public class PCCameraController : MonoBehaviour
     float targetY;
     Quaternion originalRotation;
 
+    void Start()
+    {
+        originalRotation = transform.localRotation;
+
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
     void Update()
     {
         targetX += Input.GetAxis("Mouse X") * sensitivityX;
@@ -28,10 +35,7 @@ public class PCCameraController : MonoBehaviour
 
         transform.localRotation = originalRotation * xRot * yRot;
     }
-    void Start()
-    {
-        originalRotation = transform.localRotation;
-    }
+
 }
 
 /*
