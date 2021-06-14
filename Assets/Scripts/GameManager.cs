@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -33,12 +34,14 @@ namespace BattleMage
 
         public void RestartGame()
         {
-            Debug.Log("RESTART!!!");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void QuitGame()
         {
+#if UNITY_EDITOR
+            EditorApplication.ExitPlaymode();
+#endif
             Application.Quit();
         }
 

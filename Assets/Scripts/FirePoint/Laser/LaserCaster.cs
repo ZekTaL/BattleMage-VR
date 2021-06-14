@@ -10,7 +10,7 @@ namespace BattleMage
     public class LaserCaster : MonoBehaviour
     {
         const float LineWidth = 0.1f;
-        const float MaxRayDist = 100f;
+        const float MaxRayDist = 40f;
 
         [SerializeField] LayerMask raycastLayers;
         [SerializeField] GameObject cubePrimitive;
