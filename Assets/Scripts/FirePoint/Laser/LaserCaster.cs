@@ -10,7 +10,7 @@ namespace BattleMage
     public class LaserCaster : MonoBehaviour
     {
         const float LineWidth = 0.1f;
-        const float MaxRayDist = 40f;
+        const float MaxRayDist = 35f;
 
         [SerializeField] LayerMask raycastLayers;
         [SerializeField] GameObject cubePrimitive;
@@ -37,7 +37,8 @@ namespace BattleMage
 
             //Initialize
             SetColor(false);
-            laserTransform.gameObject.SetActive(false);
+            // keep the laser always on
+            laserTransform.gameObject.SetActive(true);
         }
 
         void Update()
@@ -72,7 +73,7 @@ namespace BattleMage
         {
             Vector3 dir = end - startPoint;
             float dist = dir.magnitude;
-            Debug.DrawLine(startPoint, end, Color.red);
+            //Debug.DrawLine(startPoint, end, Color.red);
 
             laserTransform.position = Vector3.Lerp(startPoint, end, 0.5f); //Midpoint
             laserTransform.rotation = Quaternion.LookRotation(dir);

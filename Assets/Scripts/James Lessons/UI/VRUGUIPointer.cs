@@ -49,7 +49,8 @@ namespace BattleMage
             inputModule.ControllerPosition = position;
             if (laser != null)
             {
-                laser.ToggleLaser(hitUI);
+                //laser.ToggleLaser(hitUI);
+                laser.ToggleLaser(true);
             }
         }
     }

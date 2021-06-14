@@ -22,6 +22,8 @@ namespace BattleMage
         [SerializeField] GameObject pcRig;
         [SerializeField] Camera vrCamera;
         [SerializeField] Camera pcCamera;
+        [SerializeField] GameObject pcCanvas;
+        [SerializeField] GameObject vrCanvas;
         [SerializeField] StandaloneInputModule inputSystemModule;
         [SerializeField] VRInputModule vrModule;
 
@@ -80,6 +82,8 @@ namespace BattleMage
                 Debug.Log("in vr rig");
                 vrRig.gameObject.SetActive(true);
                 pcRig.gameObject.SetActive(false);
+                vrCanvas.SetActive(true);
+                pcCanvas.SetActive(false);
                 MainCamera = vrCamera;
                 //pcCamera.tag = "Untagged";
             }
@@ -89,6 +93,8 @@ namespace BattleMage
                 //PCCursorManager.HideCursor();
                 vrRig.gameObject.SetActive(false);
                 pcRig.gameObject.SetActive(true);
+                vrCanvas.SetActive(false);
+                pcCanvas.SetActive(true);
                 MainCamera = pcCamera;
                 //vrCamera.tag = "Untagged";
             }

@@ -26,7 +26,7 @@ namespace BattleMage.SpellSystem
 
         public override void ReleaseSpell()
         {
-            firepoint.ToggleLaser(false);
+            //firepoint.ToggleLaser(false);
             MatchFirepointTransform();
             col.enabled = true;
             rb.velocity = transform.forward * moveSpeed;
