@@ -8,9 +8,10 @@ namespace BattleMage
     {
         public static GameSettings Instance;
 
-        
-        [SerializeField] Color colorInvalid = Color.red;
-        [SerializeField] Color colorValid = Color.green;
+        // Color of the valid laser caster
+        [SerializeField] private Color colorInvalid = new Color32(125, 125, 125, 185);
+        // Color of the invalid laser caster
+        [SerializeField] private Color colorValid = new Color32(236, 255, 0, 170);
         public Color ColorValid => colorValid;
         public Color ColorInvalid => colorInvalid;
 
