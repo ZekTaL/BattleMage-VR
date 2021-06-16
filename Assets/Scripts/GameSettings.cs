@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace BattleMage
 {
+    /// <summary>
+    /// Class that manages the settings of the game
+    /// </summary>
     [DefaultExecutionOrder(-10000)]
     public class GameSettings : MonoBehaviour
     {

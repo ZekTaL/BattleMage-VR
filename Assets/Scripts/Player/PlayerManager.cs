@@ -7,15 +7,16 @@ using BattleMage.Enemies;
 
 namespace BattleMage
 {
+    /// <summary>
+    /// Class that manages the player
+    /// </summary>
     public class PlayerManager : MonoBehaviour
     {
-        #region Field and mono
+        [SerializeField] Collider col;
+
         public static PlayerManager Instance;
         public static bool PlayerDead => Instance.playerDead;
         bool playerDead = false;
-
-
-        [SerializeField] Collider col;
 
         RigManager rigManager;
         UIManager uiM;
@@ -35,12 +36,17 @@ namespace BattleMage
 
             UpdateHealthDisplay();
         }
-        #endregion
 
+        /// <summary>
+        /// When the player takes damage
+        /// </summary>
+        /// <param name="amount">amount of damage taken</param>
         public void TakeDamage(int amount = 1)
         {
             currentHealth -= amount;
+            // damage the player
             uiM.PlayerDamaged();
+            // Update the health UI
             UpdateHealthDisplay();
 
             if (currentHealth <= 0)
@@ -64,26 +70,39 @@ namespace BattleMage
         }
 
         #region Interactions
+
+        /// <summary>
+        /// Call this function when the player press the trigger
+        /// </summary>
+        /// <param name="isLeft">Which hand pressed the trigger</param>
         public void PressedTrigger (bool isLeft)
         {
             spellM.PressedTrigger(isLeft);
         }
+
+        /// <summary>
+        /// Call this function when the player released the trigger
+        /// </summary>
+        /// <param name="isLeft">Which hand released the trigger</param>
         public void ReleasedTrigger(bool isLeft)
         {
             spellM.ReleasedTrigger(isLeft);
         }
+
+        /// <summary>
+        /// Call this function when the player press the touchpad
+        /// </summary>
+        /// <param name="isLeft">Which hand pressed the touchpad</param>
         public void PressedToggleSpell (bool isLeft)
         {
             spellM.PressedToggleSpell(isLeft);
         }
-        #endregion
-
-        #region Abilities
 
         #endregion
 
-        #region Minor
+        /// <summary>
+        /// Update the Health in the HUD
+        /// </summary>
         void UpdateHealthDisplay () => uiM.UpdateHealth(currentHealth);
-        #endregion
     }
 }

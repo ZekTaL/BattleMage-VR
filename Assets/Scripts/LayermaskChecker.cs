@@ -1,57 +1,52 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿//using System.Collections;
+//using UnityEngine;
 
-namespace Assets.Scripts
-{
-    public class LayermaskChecker : MonoBehaviour
-    {
-        public LayerMask groundLayer;
-        public LayerMask enemyLayer;
+//namespace Assets.Scripts
+//{
+//    /// <summary>
+//    /// Class that checks which layer is hit by the raycast
+//    /// </summary>
+//    public class LayermaskChecker : MonoBehaviour
+//    {
+//        //<referencs layer mask 
+//        public LayerMask groundLayer;
+//        public LayerMask enemyLayer;
 
-        void Update()
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Vector3 mousePos = Input.mousePosition;
-                mousePos.z = 10f;
-                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                Physics.Raycast(ray, out RaycastHit hit, int.MaxValue);
-                Debug.DrawRay(ray.origin, ray.direction, Color.red, 2f);
+//        void Update()
+//        {
+//            Debug.Log("I USE THIS CLASS");
 
-                if (hit.collider != null)
-                {
-                    Debug.Log("s");
+//            // Shoot with the LeftMouseClick
+//            if (Input.GetMouseButtonDown(0))
+//            {
+//                Vector3 mousePos = Input.mousePosition;
+//                mousePos.z = 10f;
+//                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+//                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+//                Physics.Raycast(ray, out RaycastHit hit, int.MaxValue);
+//                Debug.DrawRay(ray.origin, ray.direction, Color.red, 2f);
 
-                    //Debug.Log("groundLayer: " + groundLayer + ", hit.collider " + hit.collider);
+//                if (hit.collider != null)
+//                {
+//                    Debug.Log("s");
 
-                    if (HitsGround(hit.collider))
-                    {
-                        Debug.Log("Hits grounds");
-                    }
-                    else if (HitsEnemy(hit.collider))
-                    {
-                        Debug.Log("Hits Enemy");
-                    }
-                }
-            }
-        }
-        //Instance.PlayerLayer == (Instance.PlayerLayer | 1 << go.layer);
-        bool HitsGround(Collider col) => groundLayer == (groundLayer | 1 << col.gameObject.layer);
-        bool HitsEnemy(Collider col) => enemyLayer == (enemyLayer | 1 << col.gameObject.layer);
+//                    //Debug.Log("groundLayer: " + groundLayer + ", hit.collider " + hit.collider);
 
-        void MouseWorldPosition ()
-        {
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = 10f;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-        }
+//                    if (HitsGround(hit.collider))
+//                    {
+//                        Debug.Log("Hits grounds");
+//                    }
+//                    else if (HitsEnemy(hit.collider))
+//                    {
+//                        Debug.Log("Hits Enemy");
+//                    }
+//                }
+//            }
+//        }
 
-        void RaycastToMousePos ()
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Physics.Raycast(ray, out RaycastHit hit, int.MaxValue);
-            Debug.DrawRay(ray.origin, ray.direction, Color.red, 2f);
-        }
-    }
-}
+//        //use bit shift to check for layers
+//        bool HitsGround(Collider col) => groundLayer == (groundLayer | 1 << col.gameObject.layer);
+//        bool HitsEnemy(Collider col) => enemyLayer == (enemyLayer | 1 << col.gameObject.layer);
+
+//    }
+//}

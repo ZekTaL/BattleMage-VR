@@ -15,12 +15,12 @@ C:/Users/franc/Documents/GitHub/BattleMage VR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50929
+51403
 Successfully changed project path to: C:/Users/franc/Documents/GitHub/BattleMage VR
 C:/Users/franc/Documents/GitHub/BattleMage VR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 118.68 ms, found 8 plugins.
-Preloading 1 native plugins for Editor in 3.27 ms.
+Refreshing native plugins compatible for Editor in 60.19 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 1.44 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/franc/Documents/GitHub/BattleMage VR/Assets
@@ -35,5 +35,1904 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002792 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.35 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.664 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008009 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.699 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 1781 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.8 MB.
+System memory in use after: 153.9 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2230.
+Total: 3.088500 ms (FindLiveObjects: 0.198700 ms CreateObjectMapping: 0.077000 ms MarkObjects: 2.710200 ms  DeleteObjects: 0.101000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Enemy
+  artifactKey: Guid(b5747bc90bb22624f9aed329f259fd36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy using Guid(b5747bc90bb22624f9aed329f259fd36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd667933541c446bb28368e7c27f6ee') in 0.047489 seconds
+  Import took 0.050997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.323562 seconds.
+  path: Assets/Scripts/James Lessons
+  artifactKey: Guid(4fb97a7a07e3d9d44ad797284629ea8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/James Lessons using Guid(4fb97a7a07e3d9d44ad797284629ea8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca915fd98b096b5a65edc9c0a5a2a356') in 0.036961 seconds
+  Import took 0.040388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.223847 seconds.
+  path: Assets/Scripts/James Lessons/UI
+  artifactKey: Guid(cf62e8f22033d9e4e997723ad07cbbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/James Lessons/UI using Guid(cf62e8f22033d9e4e997723ad07cbbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75674649a8567a6edbf66e071471d588') in 0.064870 seconds
+  Import took 0.071011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.562707 seconds.
+  path: Assets/Scripts/Player/VR
+  artifactKey: Guid(2086610c84396064b8ee857ed70a429f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/VR using Guid(2086610c84396064b8ee857ed70a429f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce244724ccb02f0c6a3b39ef8854658') in 0.036660 seconds
+  Import took 0.040166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.767107 seconds.
+  path: Assets/Scripts/SpellSystem
+  artifactKey: Guid(d6e9fc6d4a9b68945a06040770b5884b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem using Guid(d6e9fc6d4a9b68945a06040770b5884b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abb7cec842a8b09ea5f683c2d03bdcf') in 0.036550 seconds
+  Import took 0.040204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.893375 seconds.
+  path: Assets/Scripts/SpellSystem/Enum
+  artifactKey: Guid(fc328cd12c54e004e88b3193375d7a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Enum using Guid(fc328cd12c54e004e88b3193375d7a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c4ffa10e1b146ae0688da6b198f7b0') in 0.039336 seconds
+  Import took 0.042910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.245900 seconds.
+  path: Assets/Scripts/SpellSystem/Enum/Spells.cs
+  artifactKey: Guid(d3ff96821a964cf4e8a1ef66eab1b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Enum/Spells.cs using Guid(d3ff96821a964cf4e8a1ef66eab1b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83f621a5e03b497c85998ca6563f933f') in 0.078606 seconds
+  Import took 0.083907 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012883 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.841 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2234.
+Total: 3.880300 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.077900 ms MarkObjects: 3.534100 ms  DeleteObjects: 0.024200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.454553 seconds.
+  path: Assets/Scripts/SpellSystem/Enum/Spells.cs
+  artifactKey: Guid(d3ff96821a964cf4e8a1ef66eab1b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Enum/Spells.cs using Guid(d3ff96821a964cf4e8a1ef66eab1b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b775e9b92c7c01e0509f675ea04474e2') in 0.035798 seconds
+  Import took 0.040551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.641753 seconds.
+  path: Assets/Scripts/SpellSystem/SpellManager.cs
+  artifactKey: Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellManager.cs using Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86637772635a421505c60ff56075f05d') in 0.039508 seconds
+  Import took 0.043910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028303 seconds.
+  path: Assets/Scripts/SpellSystem/SpellManager.cs
+  artifactKey: Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellManager.cs using Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86637772635a421505c60ff56075f05d') in 0.049992 seconds
+  Import took 0.053900 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012820 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.656 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2238.
+Total: 2.422400 ms (FindLiveObjects: 0.204100 ms CreateObjectMapping: 0.059500 ms MarkObjects: 2.133200 ms  DeleteObjects: 0.024500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 582.810458 seconds.
+  path: Assets/Scripts/SpellSystem/SpellManager.cs
+  artifactKey: Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellManager.cs using Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b46a1576bd638a0bd782b1fe17e631') in 0.037329 seconds
+  Import took 0.041078 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010903 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.693 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2242.
+Total: 3.449200 ms (FindLiveObjects: 0.240600 ms CreateObjectMapping: 0.096900 ms MarkObjects: 3.085100 ms  DeleteObjects: 0.025300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009329 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.826 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2246.
+Total: 2.345900 ms (FindLiveObjects: 0.222200 ms CreateObjectMapping: 0.099300 ms MarkObjects: 1.995900 ms  DeleteObjects: 0.027500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008698 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.83 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.324 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2250.
+Total: 9.202800 ms (FindLiveObjects: 1.638500 ms CreateObjectMapping: 0.422900 ms MarkObjects: 7.093300 ms  DeleteObjects: 0.043200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010009 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.955 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.21 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2254.
+Total: 3.808600 ms (FindLiveObjects: 0.183800 ms CreateObjectMapping: 0.064000 ms MarkObjects: 3.516500 ms  DeleteObjects: 0.042800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011475 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.76 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.53 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.842 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.06 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.55 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2258.
+Total: 4.437900 ms (FindLiveObjects: 0.318400 ms CreateObjectMapping: 0.124600 ms MarkObjects: 3.850600 ms  DeleteObjects: 0.140900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013449 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.786 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2262.
+Total: 2.756900 ms (FindLiveObjects: 0.212300 ms CreateObjectMapping: 0.073200 ms MarkObjects: 2.445300 ms  DeleteObjects: 0.024600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1275.717660 seconds.
+  path: Assets/Scripts/SpellSystem/Spells/GravitySpell.cs
+  artifactKey: Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Spells/GravitySpell.cs using Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c3dd3f5fc00ecbbb60f37d54dde311') in 0.048566 seconds
+  Import took 0.051813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016360 seconds.
+  path: Assets/Scripts/SpellSystem/Spells/GravitySpell.cs
+  artifactKey: Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Spells/GravitySpell.cs using Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c3dd3f5fc00ecbbb60f37d54dde311') in 0.037767 seconds
+  Import took 0.042586 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010302 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.531 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2266.
+Total: 2.454800 ms (FindLiveObjects: 0.194700 ms CreateObjectMapping: 0.073000 ms MarkObjects: 2.162400 ms  DeleteObjects: 0.023600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1169.094823 seconds.
+  path: Assets/Scripts/SpellSystem/Spells/GravitySpell.cs
+  artifactKey: Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Spells/GravitySpell.cs using Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a5788a071fca6abb2c017b6172cc65') in 0.031762 seconds
+  Import took 0.035341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.821723 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(d7b920b5077c9804fac620318689e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(d7b920b5077c9804fac620318689e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb3473a49e0e83b90d6a751e7e47ced') in 0.038525 seconds
+  Import took 0.044554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.911067 seconds.
+  path: Assets/Scripts/LayermaskChecker.cs
+  artifactKey: Guid(732a9f6bd2aa5ac42b3c677b214eaafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LayermaskChecker.cs using Guid(732a9f6bd2aa5ac42b3c677b214eaafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a562855ff70b6e74511372b9ec15373') in 0.035446 seconds
+  Import took 0.040471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.364617 seconds.
+  path: Assets/Scripts/GameSettings.cs
+  artifactKey: Guid(fc76046c135e7dd49a0f9872ff263c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameSettings.cs using Guid(fc76046c135e7dd49a0f9872ff263c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e898d67f2f2d9cc56e7ec23cd736d1') in 0.040846 seconds
+  Import took 0.044930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002515 seconds.
+  path: Assets/Scripts/GameSettings.cs
+  artifactKey: Guid(fc76046c135e7dd49a0f9872ff263c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameSettings.cs using Guid(fc76046c135e7dd49a0f9872ff263c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e898d67f2f2d9cc56e7ec23cd736d1') in 0.039800 seconds
+  Import took 0.047839 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009622 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.487 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2270.
+Total: 2.735100 ms (FindLiveObjects: 0.209300 ms CreateObjectMapping: 0.063700 ms MarkObjects: 2.435700 ms  DeleteObjects: 0.025100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.567091 seconds.
+  path: Assets/Scripts/GameSettings.cs
+  artifactKey: Guid(fc76046c135e7dd49a0f9872ff263c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameSettings.cs using Guid(fc76046c135e7dd49a0f9872ff263c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005502c3e0e22f4e6e1212c6486e2066') in 0.033556 seconds
+  Import took 0.037327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.112822 seconds.
+  path: Assets/Scripts/Enemy/Base
+  artifactKey: Guid(64a86f1499532bf43a7be2953b68d385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Base using Guid(64a86f1499532bf43a7be2953b68d385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2cf01ec4c2a179198a10a0df3ef662') in 0.039477 seconds
+  Import took 0.043013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.811886 seconds.
+  path: Assets/Scripts/Enemy/Base/EnemyBase.cs
+  artifactKey: Guid(7426e078ff5e0484c9bee1a4ab63ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Base/EnemyBase.cs using Guid(7426e078ff5e0484c9bee1a4ab63ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded118201ec1533617d5e1c87409d1ee') in 0.046779 seconds
+  Import took 0.050795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016061 seconds.
+  path: Assets/Scripts/Enemy/Base/EnemyBase.cs
+  artifactKey: Guid(7426e078ff5e0484c9bee1a4ab63ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Base/EnemyBase.cs using Guid(7426e078ff5e0484c9bee1a4ab63ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded118201ec1533617d5e1c87409d1ee') in 0.045207 seconds
+  Import took 0.048989 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008728 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.457 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2274.
+Total: 2.478000 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.067700 ms MarkObjects: 2.176500 ms  DeleteObjects: 0.024600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 607.534412 seconds.
+  path: Assets/Scripts/Enemy/Base/EnemyBase.cs
+  artifactKey: Guid(7426e078ff5e0484c9bee1a4ab63ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Base/EnemyBase.cs using Guid(7426e078ff5e0484c9bee1a4ab63ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61142bde34d7b28ab0d863ff1962f29e') in 0.032474 seconds
+  Import took 0.035799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.477321 seconds.
+  path: Assets/Scripts/Enemy/Spawner
+  artifactKey: Guid(52f356a8161b0d64cb02f20ad3c4fab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Spawner using Guid(52f356a8161b0d64cb02f20ad3c4fab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b854ba6aa3ae211af4616988635c440a') in 0.039791 seconds
+  Import took 0.043068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.098248 seconds.
+  path: Assets/Scripts/Enemy/Spawner/EnemySpawner.cs
+  artifactKey: Guid(af86bffde4e45ea459135ba09b0911ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Spawner/EnemySpawner.cs using Guid(af86bffde4e45ea459135ba09b0911ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c16abfc4415331f98be5f2438c53a24') in 0.045593 seconds
+  Import took 0.049992 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010270 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.250 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.21 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 2.964500 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.071900 ms MarkObjects: 2.647900 ms  DeleteObjects: 0.048900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 264.999109 seconds.
+  path: Assets/Scripts/Enemy/Spawner/EnemySpawner.cs
+  artifactKey: Guid(af86bffde4e45ea459135ba09b0911ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/Spawner/EnemySpawner.cs using Guid(af86bffde4e45ea459135ba09b0911ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f54e8b17b5707d0feabe21572f1a7ad') in 0.048291 seconds
+  Import took 0.053898 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013225 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.464 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2282.
+Total: 2.779400 ms (FindLiveObjects: 0.206700 ms CreateObjectMapping: 0.067000 ms MarkObjects: 2.478200 ms  DeleteObjects: 0.026400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023959 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.480 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2286.
+Total: 2.670500 ms (FindLiveObjects: 0.212900 ms CreateObjectMapping: 0.074300 ms MarkObjects: 2.343200 ms  DeleteObjects: 0.038800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.524111 seconds.
+  path: Assets/Scripts/Enemy/DummyEnemy.cs
+  artifactKey: Guid(5cf7678c1194d824c88bc7b05bfd13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/DummyEnemy.cs using Guid(5cf7678c1194d824c88bc7b05bfd13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ff405decbc9c0a285373266c512b8e') in 0.043386 seconds
+  Import took 0.047330 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007988 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.844 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2290.
+Total: 3.851000 ms (FindLiveObjects: 0.334800 ms CreateObjectMapping: 0.125800 ms MarkObjects: 3.356900 ms  DeleteObjects: 0.031700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.665824 seconds.
+  path: Assets/Scripts/Enemy/DummyEnemy.cs
+  artifactKey: Guid(5cf7678c1194d824c88bc7b05bfd13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/DummyEnemy.cs using Guid(5cf7678c1194d824c88bc7b05bfd13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9094ab7bc25cd14f02bd2422c1da18') in 0.035495 seconds
+  Import took 0.039245 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011040 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.692 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.55 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.24 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2294.
+Total: 30.087800 ms (FindLiveObjects: 4.097500 ms CreateObjectMapping: 0.936700 ms MarkObjects: 24.996500 ms  DeleteObjects: 0.047500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010806 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.486 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2298.
+Total: 2.688000 ms (FindLiveObjects: 0.224300 ms CreateObjectMapping: 0.070800 ms MarkObjects: 2.359600 ms  DeleteObjects: 0.031900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010458 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.12 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.888 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.52 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.28 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2302.
+Total: 4.572400 ms (FindLiveObjects: 0.282400 ms CreateObjectMapping: 0.121100 ms MarkObjects: 4.094100 ms  DeleteObjects: 0.071300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008785 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.696 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2306.
+Total: 2.504600 ms (FindLiveObjects: 0.206600 ms CreateObjectMapping: 0.062500 ms MarkObjects: 2.200100 ms  DeleteObjects: 0.033900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 157.421869 seconds.
+  path: Assets/Scripts/Enemy/DummyEnemy.cs
+  artifactKey: Guid(5cf7678c1194d824c88bc7b05bfd13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy/DummyEnemy.cs using Guid(5cf7678c1194d824c88bc7b05bfd13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa9ec3a083cb8cf3574d0def01d8030') in 0.033982 seconds
+  Import took 0.037896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.525802 seconds.
+  path: Assets/Scripts/Feedback
+  artifactKey: Guid(250658da68ee42c4ca3e824b0624090f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Feedback using Guid(250658da68ee42c4ca3e824b0624090f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f78dd457a5881832b41ff4c708a00f') in 0.040061 seconds
+  Import took 0.043223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.246023 seconds.
+  path: Assets/Scripts/Feedback/FeedbackManager.cs
+  artifactKey: Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Feedback/FeedbackManager.cs using Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1e96044a7ea0f4f0796a466c3be3cb') in 0.037484 seconds
+  Import took 0.042203 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010595 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.518 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2310.
+Total: 3.070300 ms (FindLiveObjects: 0.324100 ms CreateObjectMapping: 0.117900 ms MarkObjects: 2.582200 ms  DeleteObjects: 0.044300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.314368 seconds.
+  path: Assets/Scripts/Feedback/FeedbackManager.cs
+  artifactKey: Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Feedback/FeedbackManager.cs using Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce3fac24f6f7f0e74b1ecac06b3b208') in 0.042122 seconds
+  Import took 0.046171 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007810 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.673 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.98 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.43 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2314.
+Total: 5.729200 ms (FindLiveObjects: 0.563900 ms CreateObjectMapping: 0.177600 ms MarkObjects: 4.938700 ms  DeleteObjects: 0.044700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.928495 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_FireballExplosion 1.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_FireballExplosion 1.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c278da5b6247eda604bae647756b74c4') in 0.106951 seconds
+  Import took 0.113253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.228285 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9727f2506a770bf0b41eb42a4cd2bb') in 0.051854 seconds
+  Import took 0.061500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.954235 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aaec9107c5a81296d56eab4176722b9') in 0.066983 seconds
+  Import took 0.074070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.105924 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcae0dd9fa71ff7688069af1f56a4014') in 0.076014 seconds
+  Import took 0.086962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.009789 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194458a504625fe90858c6645c9f1091') in 0.045162 seconds
+  Import took 0.051700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.878856 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd9ac20eba0f0fa2dcb56bc07300738') in 0.060775 seconds
+  Import took 0.076245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.311088 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9f5de49de09c49514c855373c069ca') in 0.046488 seconds
+  Import took 0.053223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.778539 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '854dd505c56353499ceab6e3f42004cb') in 0.048602 seconds
+  Import took 0.056230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.694546 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d607811b9b3ed231ef1324b2ef4fa9') in 0.056902 seconds
+  Import took 0.063921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.087297 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '473770ca6fadf4aa16c53f7e22c56eb2') in 0.075907 seconds
+  Import took 0.084183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.438182 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f8141dfcfeae1d59259ca1bbde78d1') in 0.085777 seconds
+  Import took 0.101344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.387605 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378e9335d2a3fa753cf875bcc79020a4') in 0.074267 seconds
+  Import took 0.084253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.574311 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bfe853c88f7d6c72506ea0f89715ba0') in 0.115529 seconds
+  Import took 0.127306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.526914 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd95f508f7fceebc5f48cd29036bd899') in 0.077517 seconds
+  Import took 0.093246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.238286 seconds.
+  path: Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab
+  artifactKey: Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pfx/Pfx_GravityExplosion.prefab using Guid(3fc787ca316107441aca3f0e9ae31b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d3d117296c76edac5e83c5d3cff93bd') in 0.041773 seconds
+  Import took 0.048900 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012871 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.903 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.9 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2318.
+Total: 3.415500 ms (FindLiveObjects: 0.220800 ms CreateObjectMapping: 0.079500 ms MarkObjects: 3.047500 ms  DeleteObjects: 0.065700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007784 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.25 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.911 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.98 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.46 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2322.
+Total: 32.704200 ms (FindLiveObjects: 1.908300 ms CreateObjectMapping: 2.742500 ms MarkObjects: 27.910300 ms  DeleteObjects: 0.135700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 155.172855 seconds.
+  path: Assets/Scripts/Feedback/FeedbackManager.cs
+  artifactKey: Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Feedback/FeedbackManager.cs using Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a082621df9d86a5712bb903345128c9') in 0.033361 seconds
+  Import took 0.037444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014275 seconds.
+  path: Assets/Scripts/Feedback/FeedbackManager.cs
+  artifactKey: Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Feedback/FeedbackManager.cs using Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a082621df9d86a5712bb903345128c9') in 0.041769 seconds
+  Import took 0.045264 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012429 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.923 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2326.
+Total: 3.889700 ms (FindLiveObjects: 0.232900 ms CreateObjectMapping: 0.074700 ms MarkObjects: 3.556800 ms  DeleteObjects: 0.024000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.336989 seconds.
+  path: Assets/Scripts/Feedback/FeedbackManager.cs
+  artifactKey: Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Feedback/FeedbackManager.cs using Guid(33ae977e0981d5d4180d3e79eba51aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29de4742b946afde9979d1b312f6f129') in 0.046627 seconds
+  Import took 0.051794 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015314 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.857 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2330.
+Total: 4.248500 ms (FindLiveObjects: 0.426400 ms CreateObjectMapping: 0.089400 ms MarkObjects: 3.704000 ms  DeleteObjects: 0.026600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.707061 seconds.
+  path: Assets/Scripts/FirePoint/Util
+  artifactKey: Guid(ce1bdb3d8db00af46bf40eb5dc88f085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/Util using Guid(ce1bdb3d8db00af46bf40eb5dc88f085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5661cf8aa57c5650a8ea33045e434c32') in 0.040439 seconds
+  Import took 0.043573 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020708 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2334.
+Total: 4.077300 ms (FindLiveObjects: 0.325200 ms CreateObjectMapping: 0.086800 ms MarkObjects: 3.630400 ms  DeleteObjects: 0.033500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.503862 seconds.
+  path: Assets/Scripts/FirePoint/_archive
+  artifactKey: Guid(c35c11aead3d2fc419a85405e5f6c70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/_archive using Guid(c35c11aead3d2fc419a85405e5f6c70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5c9db0a97d82fd21fda5ae53bf4798') in 0.046590 seconds
+  Import took 0.050032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.570693 seconds.
+  path: Assets/Scripts/FirePoint/CustomRaycast.cs
+  artifactKey: Guid(4c07e0310069f634a93fe044397cac4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/CustomRaycast.cs using Guid(4c07e0310069f634a93fe044397cac4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74927df2dd20c881f7cbf2bdf8cf9403') in 0.032531 seconds
+  Import took 0.036402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019386 seconds.
+  path: Assets/Scripts/FirePoint/CustomRaycast.cs
+  artifactKey: Guid(4c07e0310069f634a93fe044397cac4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/CustomRaycast.cs using Guid(4c07e0310069f634a93fe044397cac4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74927df2dd20c881f7cbf2bdf8cf9403') in 0.037338 seconds
+  Import took 0.041917 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008245 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.556 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.38 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2338.
+Total: 3.647300 ms (FindLiveObjects: 0.409100 ms CreateObjectMapping: 0.214500 ms MarkObjects: 2.977700 ms  DeleteObjects: 0.044100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 282.736884 seconds.
+  path: Assets/Scripts/FirePoint/CustomRaycast.cs
+  artifactKey: Guid(4c07e0310069f634a93fe044397cac4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/CustomRaycast.cs using Guid(4c07e0310069f634a93fe044397cac4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce573a0fe77493abeb120bc7e088c8e') in 0.055205 seconds
+  Import took 0.060108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.907977 seconds.
+  path: Assets/Scripts/FirePoint/FirePointReferencer.cs
+  artifactKey: Guid(3f5cd4c6b4ccf744c9fcf8922c58c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/FirePointReferencer.cs using Guid(3f5cd4c6b4ccf744c9fcf8922c58c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf78272c47e346883635a8ff5a992cd1') in 0.039338 seconds
+  Import took 0.044547 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009925 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.425 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2342.
+Total: 2.844300 ms (FindLiveObjects: 0.215700 ms CreateObjectMapping: 0.069700 ms MarkObjects: 2.533500 ms  DeleteObjects: 0.024000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.019646 seconds.
+  path: Assets/Scripts/FirePoint/FirePointReferencer.cs
+  artifactKey: Guid(3f5cd4c6b4ccf744c9fcf8922c58c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/FirePointReferencer.cs using Guid(3f5cd4c6b4ccf744c9fcf8922c58c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e667d08219d350e34746c40934f135b') in 0.032466 seconds
+  Import took 0.035749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.159128 seconds.
+  path: Assets/Scripts/FirePoint/LaserCaster.cs
+  artifactKey: Guid(ff45edaa9e70cae4cbac7cd331e3b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/LaserCaster.cs using Guid(ff45edaa9e70cae4cbac7cd331e3b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a37f157a383dccfb251691ce8f51e1') in 0.042022 seconds
+  Import took 0.045964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001438 seconds.
+  path: Assets/Scripts/FirePoint/LaserCaster.cs
+  artifactKey: Guid(ff45edaa9e70cae4cbac7cd331e3b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/LaserCaster.cs using Guid(ff45edaa9e70cae4cbac7cd331e3b2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a37f157a383dccfb251691ce8f51e1') in 0.037850 seconds
+  Import took 0.041777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.515896 seconds.
+  path: Assets/Scripts/FirePoint/VRInputFuncitonalityConnector.cs
+  artifactKey: Guid(60e3e794a623df446bf551c9018d7d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/VRInputFuncitonalityConnector.cs using Guid(60e3e794a623df446bf551c9018d7d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8f2d9607633a1315807e7834fd350a') in 0.041645 seconds
+  Import took 0.048501 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007925 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.094 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2346.
+Total: 3.754900 ms (FindLiveObjects: 0.229000 ms CreateObjectMapping: 0.072500 ms MarkObjects: 3.415600 ms  DeleteObjects: 0.036300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.866146 seconds.
+  path: Assets/Scripts/FirePoint/VRInputFuncitonalityConnector.cs
+  artifactKey: Guid(60e3e794a623df446bf551c9018d7d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FirePoint/VRInputFuncitonalityConnector.cs using Guid(60e3e794a623df446bf551c9018d7d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '461f1af1071fcea64c21c0a81d6ec145') in 0.042715 seconds
+  Import took 0.047067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.520647 seconds.
+  path: Assets/Scripts/Player/PlayerManager.cs
+  artifactKey: Guid(5e171a259709a1d41b5ca39116df2d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerManager.cs using Guid(5e171a259709a1d41b5ca39116df2d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912c2dc842ec57439954fb5324968dbc') in 0.041713 seconds
+  Import took 0.049377 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010113 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.946 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2350.
+Total: 2.532100 ms (FindLiveObjects: 0.315900 ms CreateObjectMapping: 0.103400 ms MarkObjects: 2.086300 ms  DeleteObjects: 0.024500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 224.237326 seconds.
+  path: Assets/Scripts/Player/RigManager.cs
+  artifactKey: Guid(228aa6f7504759a4e9743e6273b0c9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/RigManager.cs using Guid(228aa6f7504759a4e9743e6273b0c9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b540c99b05adee3c3faa8f14be3f5ee') in 0.051466 seconds
+  Import took 0.054764 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012990 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.970 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.59 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2354.
+Total: 36.103000 ms (FindLiveObjects: 3.081200 ms CreateObjectMapping: 1.930100 ms MarkObjects: 31.013900 ms  DeleteObjects: 0.066200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011040 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.506 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2358.
+Total: 3.543700 ms (FindLiveObjects: 0.227600 ms CreateObjectMapping: 0.085100 ms MarkObjects: 3.192100 ms  DeleteObjects: 0.037000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011739 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.28 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.041 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.70 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.29 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2362.
+Total: 8.881800 ms (FindLiveObjects: 0.865700 ms CreateObjectMapping: 0.287800 ms MarkObjects: 7.659100 ms  DeleteObjects: 0.066000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 204.519365 seconds.
+  path: Assets/Scripts/Player/PC/PCCameraController.cs
+  artifactKey: Guid(b73e10d80779eca4ab951802dc62bdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PC/PCCameraController.cs using Guid(b73e10d80779eca4ab951802dc62bdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89acb9a356f8a39d173db29fba78e102') in 0.042604 seconds
+  Import took 0.045904 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2366.
+Total: 3.858100 ms (FindLiveObjects: 0.411400 ms CreateObjectMapping: 0.154400 ms MarkObjects: 3.263400 ms  DeleteObjects: 0.027300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.234317 seconds.
+  path: Assets/Scripts/Player/PC/PCCursorManager.cs
+  artifactKey: Guid(8df16f38da228dc4ca2bc0415e799e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PC/PCCursorManager.cs using Guid(8df16f38da228dc4ca2bc0415e799e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6631f006c764fd36d8abd3564fc28b95') in 0.127589 seconds
+  Import took 0.135909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Scripts/Player/PC/PCCameraController.cs
+  artifactKey: Guid(b73e10d80779eca4ab951802dc62bdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PC/PCCameraController.cs using Guid(b73e10d80779eca4ab951802dc62bdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430ad219184630735126db60aa8dffda') in 0.046629 seconds
+  Import took 0.054601 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007682 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.453 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2370.
+Total: 3.683500 ms (FindLiveObjects: 0.288300 ms CreateObjectMapping: 0.105200 ms MarkObjects: 3.241000 ms  DeleteObjects: 0.047600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.794265 seconds.
+  path: Assets/Scripts/Player/PC/PCCursorManager.cs
+  artifactKey: Guid(8df16f38da228dc4ca2bc0415e799e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PC/PCCursorManager.cs using Guid(8df16f38da228dc4ca2bc0415e799e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ce78bc53be7752f7cb9342c781e842') in 0.048672 seconds
+  Import took 0.055643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Scripts/Player/PC/PCPlayerController.cs
+  artifactKey: Guid(d3031f1148112be4eb22540bbe549a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PC/PCPlayerController.cs using Guid(d3031f1148112be4eb22540bbe549a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faca7414b531c2fe768e70f5a272429d') in 0.066099 seconds
+  Import took 0.073347 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007704 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.415 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2374.
+Total: 2.525300 ms (FindLiveObjects: 0.220300 ms CreateObjectMapping: 0.063500 ms MarkObjects: 2.216800 ms  DeleteObjects: 0.023600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.566578 seconds.
+  path: Assets/Scripts/Player/PC/PCPlayerController.cs
+  artifactKey: Guid(d3031f1148112be4eb22540bbe549a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PC/PCPlayerController.cs using Guid(d3031f1148112be4eb22540bbe549a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906bc9fd38ec7d991ba3c868c932ccbc') in 0.032333 seconds
+  Import took 0.035465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.871910 seconds.
+  path: Assets/Scripts/Player/VR/VRRig.cs
+  artifactKey: Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/VR/VRRig.cs using Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1386698b58de46bdcb4d55cdd881ae8') in 0.039272 seconds
+  Import took 0.044337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Scripts/Player/VR/VRRig.cs
+  artifactKey: Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/VR/VRRig.cs using Guid(d0ee4bdcbdffd134a85ef10ffc226192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1386698b58de46bdcb4d55cdd881ae8') in 0.037740 seconds
+  Import took 0.041742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.623643 seconds.
+  path: Assets/Scripts/Player/VR/VRUtil.cs
+  artifactKey: Guid(a6394a5a8649bf149825bcca7156c26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/VR/VRUtil.cs using Guid(a6394a5a8649bf149825bcca7156c26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1397bb1f8dc97d5817a266c813cf6bbe') in 0.051633 seconds
+  Import took 0.056581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003080 seconds.
+  path: Assets/Scripts/Player/VR/VRUtil.cs
+  artifactKey: Guid(a6394a5a8649bf149825bcca7156c26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/VR/VRUtil.cs using Guid(a6394a5a8649bf149825bcca7156c26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1397bb1f8dc97d5817a266c813cf6bbe') in 0.046537 seconds
+  Import took 0.055499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.117424 seconds.
+  path: Assets/Scripts/Player/VR/VRController.cs
+  artifactKey: Guid(291d41d5c84a7b14e8521270b673bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/VR/VRController.cs using Guid(291d41d5c84a7b14e8521270b673bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ebc3fd9266c085934836b7ca122ed5c') in 0.051037 seconds
+  Import took 0.056932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.041629 seconds.
+  path: Assets/Scripts/Player/VR/Teleporter.cs
+  artifactKey: Guid(06fedc94f288d6c47a08e1ab88fb3988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/VR/Teleporter.cs using Guid(06fedc94f288d6c47a08e1ab88fb3988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a489642dce2b9267241cceb2a7ed84c') in 0.050789 seconds
+  Import took 0.056112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.203585 seconds.
+  path: Assets/Scripts/SpellSystem/HUD
+  artifactKey: Guid(f38f071338973c141804035b44fb0728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/HUD using Guid(f38f071338973c141804035b44fb0728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85970ac007b4acb861d0eff0c73c2890') in 0.041713 seconds
+  Import took 0.045951 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.024323 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.656 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.28 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2378.
+Total: 2.245100 ms (FindLiveObjects: 0.224800 ms CreateObjectMapping: 0.069600 ms MarkObjects: 1.924700 ms  DeleteObjects: 0.025000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009555 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.563 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2382.
+Total: 3.781200 ms (FindLiveObjects: 0.377400 ms CreateObjectMapping: 0.160700 ms MarkObjects: 3.203500 ms  DeleteObjects: 0.037700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.259276 seconds.
+  path: Assets/Scripts/SpellSystem/UI
+  artifactKey: Guid(5f7c29ad2391d7a42bfd74fc02f24c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/UI using Guid(5f7c29ad2391d7a42bfd74fc02f24c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc2b3b6ade150d4f060156bcc2feb69') in 0.043031 seconds
+  Import took 0.046979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.445468 seconds.
+  path: Assets/Scripts/SpellSystem/UI/UIManager.cs
+  artifactKey: Guid(c71d06f2c6fcc944685897eaaae183b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/UI/UIManager.cs using Guid(c71d06f2c6fcc944685897eaaae183b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6459e6a05fc124f15e17d0232587d5f7') in 0.034052 seconds
+  Import took 0.038501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021998 seconds.
+  path: Assets/Scripts/SpellSystem/UI/UIManager.cs
+  artifactKey: Guid(c71d06f2c6fcc944685897eaaae183b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/UI/UIManager.cs using Guid(c71d06f2c6fcc944685897eaaae183b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6459e6a05fc124f15e17d0232587d5f7') in 0.037665 seconds
+  Import took 0.041273 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014023 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.703 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2386.
+Total: 3.642400 ms (FindLiveObjects: 0.460400 ms CreateObjectMapping: 0.328000 ms MarkObjects: 2.827100 ms  DeleteObjects: 0.024900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.616952 seconds.
+  path: Assets/Scripts/SpellSystem/UI/UIManager.cs
+  artifactKey: Guid(c71d06f2c6fcc944685897eaaae183b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/UI/UIManager.cs using Guid(c71d06f2c6fcc944685897eaaae183b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfdd816621e087e00ea54202d143f85e') in 0.032773 seconds
+  Import took 0.036286 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016372 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.006 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2390.
+Total: 3.451700 ms (FindLiveObjects: 0.351800 ms CreateObjectMapping: 0.114800 ms MarkObjects: 2.952100 ms  DeleteObjects: 0.031400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010044 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.418 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2394.
+Total: 2.790300 ms (FindLiveObjects: 0.224100 ms CreateObjectMapping: 0.068200 ms MarkObjects: 2.472800 ms  DeleteObjects: 0.024100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.061111 seconds.
+  path: Assets/Scripts/SpellSystem/UI/WorldSpaceHealthBar.cs
+  artifactKey: Guid(59e530222eeccf44195d58fe4c164328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/UI/WorldSpaceHealthBar.cs using Guid(59e530222eeccf44195d58fe4c164328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45da19d3498ae84caf1b6ceee024c057') in 0.034656 seconds
+  Import took 0.037820 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017270 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.641 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2398.
+Total: 2.578400 ms (FindLiveObjects: 0.338200 ms CreateObjectMapping: 0.092600 ms MarkObjects: 2.114500 ms  DeleteObjects: 0.031700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.145885 seconds.
+  path: Assets/SteamVR_Input/SteamVR_Actions.asmdef
+  artifactKey: Guid(4f867d5da92ac964985719cf59dccc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR_Input/SteamVR_Actions.asmdef using Guid(4f867d5da92ac964985719cf59dccc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a967a61b13bedad9c1df50ebcd8ffa4b') in 0.048288 seconds
+  Import took 0.052137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.221036 seconds.
+  path: Assets/Scripts/SpellSystem/SpellHud.cs
+  artifactKey: Guid(fa6b80f7ddde8974fb1a19a1ddd681de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellHud.cs using Guid(fa6b80f7ddde8974fb1a19a1ddd681de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c532d478e71f4e9b89576827cba3e79') in 0.041800 seconds
+  Import took 0.046390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008532 seconds.
+  path: Assets/Scripts/SpellSystem/SpellHud.cs
+  artifactKey: Guid(fa6b80f7ddde8974fb1a19a1ddd681de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellHud.cs using Guid(fa6b80f7ddde8974fb1a19a1ddd681de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c532d478e71f4e9b89576827cba3e79') in 0.046215 seconds
+  Import took 0.050552 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007942 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.466 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.2 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2402.
+Total: 2.825900 ms (FindLiveObjects: 0.241000 ms CreateObjectMapping: 0.090300 ms MarkObjects: 2.468300 ms  DeleteObjects: 0.025000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.061115 seconds.
+  path: Assets/Scripts/SpellSystem/SpellHud.cs
+  artifactKey: Guid(fa6b80f7ddde8974fb1a19a1ddd681de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellHud.cs using Guid(fa6b80f7ddde8974fb1a19a1ddd681de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe3d8efe2c232ccd54c61310bb7464d') in 0.031596 seconds
+  Import took 0.034900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.461443 seconds.
+  path: Assets/Scripts/SpellSystem/SpellManager.cs
+  artifactKey: Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellManager.cs using Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6479340c995ee7e4918e28f6ab8ffd42') in 0.039642 seconds
+  Import took 0.043866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001729 seconds.
+  path: Assets/Scripts/SpellSystem/SpellManager.cs
+  artifactKey: Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/SpellManager.cs using Guid(82622c4ef479dd442bc628d7d24c819a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6479340c995ee7e4918e28f6ab8ffd42') in 0.037038 seconds
+  Import took 0.043385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.563277 seconds.
+  path: Assets/Scripts/SpellSystem/Spells/FireballSpell.cs
+  artifactKey: Guid(2e39ee90a0b8e744aa21beac0972bca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Spells/FireballSpell.cs using Guid(2e39ee90a0b8e744aa21beac0972bca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d34c0818a2b7426afe72f47da20deab') in 0.043315 seconds
+  Import took 0.048016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.369499 seconds.
+  path: Assets/Scripts/SpellSystem/Spells/GravitySpell.cs
+  artifactKey: Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Spells/GravitySpell.cs using Guid(508036f859300454aaedae71756f26cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb31823b5b835802e065cc4093011da') in 0.042242 seconds
+  Import took 0.047824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.706864 seconds.
+  path: Assets/Scripts/SpellSystem/Spells/SpellBase.cs
+  artifactKey: Guid(7d15bb152869282419c0833b73604ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpellSystem/Spells/SpellBase.cs using Guid(7d15bb152869282419c0833b73604ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d33286fdaf798cc5f1a183bfdbd076') in 0.051617 seconds
+  Import took 0.056188 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008159 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\franc\Documents\GitHub\BattleMage VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  7.555 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.74 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.57 ms.
+Unloading 1741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.2 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2406.
+Total: 7.051200 ms (FindLiveObjects: 0.630000 ms CreateObjectMapping: 0.317800 ms MarkObjects: 5.989100 ms  DeleteObjects: 0.107200 ms)
+

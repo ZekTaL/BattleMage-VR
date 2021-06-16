@@ -11,6 +11,9 @@ using UnityEngine.EventSystems;
 
 namespace BattleMage
 {
+    /// <summary>
+    /// Class that manages the rigs (PC and VR)
+    /// </summary>
     [DefaultExecutionOrder(-100000)]
     public class RigManager : MonoBehaviour
     {
@@ -35,7 +38,9 @@ namespace BattleMage
             //Init
             Instance = this;
 
+            // check if VR is enable
             inVR = VRUtil.IsVREnabled();
+            // Activate the appropriate rig
             ActivateRig();
         }
 
@@ -49,6 +54,8 @@ namespace BattleMage
             //    else
             //        PCCursorManager.HideCursor();
             //}
+
+            // Enable the correct input system that is different from PC to VR
             if(inVR && inputSystemModule.enabled)
             {
                 inputSystemModule.enabled = false;
@@ -63,18 +70,21 @@ namespace BattleMage
             }
         }
 
-        private void OnGUI()
-        {
-            GUI.Label(new Rect(20, 20, 200, 20), "InVR: " + inVR);
-        }
+        //private void OnGUI()
+        //{
+        //    GUI.Label(new Rect(20, 20, 200, 20), "InVR: " + inVR);
+        //}
 
-        public void ToggleRig ()
+        public void ToggleRig()
         {
             inVR = !inVR;
             ActivateRig();
             VR.VRUtil.SetVREnabled(inVR);
         }
 
+        /// <summary>
+        /// Activate the appropriate rig between PC and VR
+        /// </summary>
         void ActivateRig ()
         {
             if (inVR)

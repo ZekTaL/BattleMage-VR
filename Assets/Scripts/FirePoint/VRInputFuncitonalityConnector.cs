@@ -5,7 +5,9 @@ using BattleMage.SpellSystem;
 
 namespace BattleMage
 {
-    //This class hooks the VR input events to the various methods inside the player manager
+    /// <summary>
+    /// This class hooks the VR input events to the various methods inside the player manager
+    /// </summary>
     public class VRInputFuncitonalityConnector : MonoBehaviour
     {
         public VRController LController;
@@ -48,49 +50,3 @@ namespace BattleMage
         }
     }
 }
-
-/*
- void Start()
-        {
-            //Laser visualizer
-            LController.Input.OnPointerPressed.AddListener(_args =>
-            {
-                playerManager.PressedTrigger(true);
-            });
-
-            LController.Input.OnPointerReleased.AddListener(_args =>
-            {
-                playerManager.ReleasedTrigger(true);
-            });
-
-            RController.Input.OnPointerPressed.AddListener(_args =>
-            {
-                playerManager.PressedTrigger(false);
-            });
-
-            RController.Input.OnPointerReleased.AddListener(_args =>
-            {
-                playerManager.ReleasedTrigger(false);
-            });
-
-            //Spell 
-            LController.Input.OnGrabPressed.AddListener(_args => //Shoot 
-            {
-                playerManager.PressedToggleSpell(false);
-                spellmanager.ShootLeft(LController.transform, LLaser.HitPosition);
-            });
-            LController.Input.OnInteractPressed.AddListener(_args => //Cycle 
-            {
-                spellmanager.CycleLeft();
-            });
-
-            RController.Input.OnGrabPressed.AddListener(_args => //Shoot 
-            {
-                spellmanager.ShootRight(RController.transform, RLaser.HitPosition);
-            });
-            RController.Input.OnInteractPressed.AddListener(_args => //Cycle 
-            {
-                spellmanager.CycleRight();
-            });
-        }
- */

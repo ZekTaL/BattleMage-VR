@@ -4,6 +4,9 @@ using BattleMage;
 
 namespace BattleMage.PC
 {
+    /// <summary>
+    /// Class of the Player Controller on PC
+    /// </summary>
     public class PCPlayerController : MonoBehaviour
     {
         PlayerManager playerM;
@@ -18,6 +21,9 @@ namespace BattleMage.PC
             InputUpdate();
         }
 
+        /// <summary>
+        /// Check for PC inputs
+        /// </summary>
         void InputUpdate ()
         {
             //Left

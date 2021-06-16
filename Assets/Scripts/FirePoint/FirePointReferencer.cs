@@ -3,9 +3,13 @@ using UnityEngine;
 
 namespace BattleMage
 {
+    /// <summary>
+    /// Class that references the firepoint in both PC and VR
+    /// </summary>
     public class FirePointReferencer : MonoBehaviour
     {
         public static FirePointReferencer Instance;
+
         [SerializeField] LaserCaster PCLeft;
         [SerializeField] LaserCaster PCRight;
         [SerializeField] LaserCaster VRLeft;
@@ -13,6 +17,9 @@ namespace BattleMage
 
         RigManager rigManager;
 
+        /// <summary>
+        /// Laser of the Left hand
+        /// </summary>
         public LaserCaster Left
         {
             get
@@ -24,6 +31,10 @@ namespace BattleMage
                 return rigManager.inVR? VRLeft : PCLeft;
             }
         }
+
+        /// <summary>
+        /// Laser of the Right hand
+        /// </summary>
         public LaserCaster Right => rigManager.inVR ? VRRight : PCRight;
 
         private void Awake()
